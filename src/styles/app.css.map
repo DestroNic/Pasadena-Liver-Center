@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACCA,AAAA,eAAe,CAAA;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;CAWhC;;AAbD,AAII,eAJW,CAIX,UAAU,CAAC;EACP,OAAO,EAAE,IAAI;CAOhB;;AAZL,AAOQ,eAPO,CAIX,UAAU,CAGN,GAAG,CAAC;EACA,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;CAEf",
+    "sources": [
+        "App.scss",
+        "_navbar-styles.scss"
+    ],
+    "names": [],
+    "file": "App.css"
+}

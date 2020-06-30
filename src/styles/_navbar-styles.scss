@@ -1,0 +1,26 @@
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-around;
+
+    .left-side {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        align-items: center;
+        
+        img {
+            height: 90px;
+            width: 90px;
+            
+        }
+
+    }
+
+    .right-side {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        align-items: center;
+    }
+}

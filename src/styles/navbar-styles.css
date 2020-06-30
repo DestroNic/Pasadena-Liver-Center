@@ -1,0 +1,19 @@
+.navbar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar-wrapper .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-wrapper .left-side img {
+  height: 150px;
+  width: 150px;
+}
+/*# sourceMappingURL=navbar-styles.css.map */

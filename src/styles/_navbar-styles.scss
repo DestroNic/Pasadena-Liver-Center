@@ -1,4 +1,16 @@
 
+.bg-wrapper {
+    height: 90vh;
+  background-image: linear-gradient(
+    rgba(255,255,255,1),
+    rgba(255,255,255,0.5)
+    ),
+    url("../assets/media/main_bg.jpg");
+  background-size: cover;
+  position: relative;
+
+}
+
 .nav-wrapper{
     display: flex;
     justify-content: space-around;
@@ -9,9 +21,27 @@
         width: 50%;
         align-items: center;
         
+        a {
+            text-decoration: none;
+            background-color: $brown;
+            padding: 15px 10px;
+            color: white;
+            border-radius: 3px;
+            transition: 0.2s ease-in-out;
+
+            &:hover{
+                box-shadow: 10px 10px 15px -7px rgba(0,0,0,0.75);
+                
+            }
+
+            &:active{
+                transform: translateY(4px);
+                box-shadow: 0 0 #aaa;
+            }
+        }
+
         img {
-            height: 90px;
-            width: 90px;
+            height: 80px;
             
         }
 
@@ -22,5 +52,62 @@
         justify-content: space-evenly;
         width: 50%;
         align-items: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            padding: 10px 11px;
+            border: 1px solid transparent;
+            
+            transition: 0.3s ease-in-out;
+            
+            &:hover{
+                box-shadow: 10px 10px 15px -7px rgba(0,0,0,0.75);
+                background-color: $primary-blue;
+                color: white;
+                font-weight: 300;
+                padding: 10px 10px;
+                border-radius: 3px;
+            }
+
+            &:active{
+                transform: translateY(4px);
+                box-shadow: 0 0 #aaa;
+            }
+
+        }
+    }
+
+}
+
+.bg-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .left-side {
+        img {
+            height: 75vh;
+            margin: 50px 0px;
+        }
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 500px;
+        font-size: 1.5em;
+        .more-info-btn {
+            
+            a {
+                background-color: $primary-blue;
+                text-decoration: none;
+                padding: 30px 35px;
+                color: white;
+                font-size: 0.9em;
+            }
+        }   
     }
 }

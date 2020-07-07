@@ -9,6 +9,7 @@ import About from './pages/about';
 import Services from "./pages/services";
 import AboutVisit from "./pages/about-visit";
 import Contact from "./pages/contact";
+import Footer from "./components/footer";
 
 
 export default class App extends Component{
@@ -29,7 +30,7 @@ export default class App extends Component{
         
         
         
-    
+      <Footer />
       </Router>
     )
   }

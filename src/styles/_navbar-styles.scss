@@ -8,6 +8,8 @@
     url("../assets/media/main_bg.jpg");
   background-size: cover;
   position: relative;
+  background-color: $secondary-blue;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -69,6 +71,7 @@
                 font-weight: 300;
                 padding: 10px 10px;
                 border-radius: 3px;
+                font-weight: 600;
             }
 
             &:active{
@@ -85,7 +88,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-
+    
     .left-side {
         img {
             height: 75vh;

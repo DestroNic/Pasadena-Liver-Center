@@ -1,3 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 $primary-blue: #0F9CBF;
 $secondary-blue: #B0DBE5;
 $brown: #AC5645;
+$cinzel: 'Cinzel', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+@mixin home-header {
+    font-family: $cinzel;
+    font-size: 2em;
+    padding-top: 30px;
+}
+
+@mixin home-align {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+@mixin home-text-align {
+    font-family: $raleway;
+    text-align: center;
+    padding: 25px 60px;
+    font-size: 1.2em;
+    margin: 50px 0px;
+}

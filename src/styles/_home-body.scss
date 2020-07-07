@@ -1,0 +1,35 @@
+.body-wrapper {
+    width: 80%;
+    margin: auto;
+    .top-card {
+        background-color: $secondary-blue;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        p {
+            @include home-header();
+        }
+        .grid-container {
+            @include home-align();
+            .right-side {
+                p {
+                    @include home-text-align();
+                }
+            }
+        }
+    }
+
+    .bottom-card {
+        background-color: $secondary-blue;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        p {
+            @include home-header();
+        }
+        .grid-container {
+            @include home-align();
+            .left-side {
+                p {
+                    @include home-text-align();
+                }
+            }
+        }
+    }
+}

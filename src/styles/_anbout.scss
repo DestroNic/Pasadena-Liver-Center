@@ -1,0 +1,29 @@
+.about-wrapper {
+    .about-content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        gap: 39px;
+        margin: 0px auto;
+        .left-side {
+            
+            img {
+                border-radius: 50%;
+                height: 350px;
+            }
+
+            .mena-bio {
+                background-color: $secondary-blue;
+                @include shadow();
+                padding: 29px 50px;
+            }
+
+
+        }
+        .right-side {
+            background-color: $secondary-blue;
+            @include shadow();
+            padding: 25px 50px;
+        }
+    }
+}

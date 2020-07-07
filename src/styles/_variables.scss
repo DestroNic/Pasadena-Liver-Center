@@ -27,3 +27,7 @@ $raleway: 'Raleway', sans-serif;
     font-size: 1.2em;
     margin: 50px 0px;
 }
+
+@mixin shadow {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

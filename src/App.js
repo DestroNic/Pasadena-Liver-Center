@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/navbar';
+import { AnimatePresence } from 'framer-motion'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './app.scss';
 
@@ -20,6 +21,7 @@ export default class App extends Component{
         
         
           <Navbar />
+          <AnimatePresence>
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
@@ -27,6 +29,7 @@ export default class App extends Component{
             <Route path="/about-visit" component={AboutVisit} />
             <Route path="/contact" component={Contact} />
           </Switch>
+          </AnimatePresence>
         
         
         

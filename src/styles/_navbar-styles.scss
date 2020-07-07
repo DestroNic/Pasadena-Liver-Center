@@ -55,6 +55,8 @@
         width: 50%;
         align-items: center;
 
+        
+
         a {
             text-decoration: none;
             color: black;
@@ -110,6 +112,17 @@
                 padding: 30px 35px;
                 color: white;
                 font-size: 0.9em;
+                transition: 0.5s ease-in-out;
+
+                &:hover{
+                    box-shadow: 10px 10px 15px -7px rgba(0,0,0,0.75);
+                    
+                }
+    
+                &:active{
+                    transform: translateY(4px);
+                    box-shadow: 0 0 #aaa;
+                }
             }
         }   
     }

@@ -2,11 +2,17 @@ import React from 'react';
 import logo from '../assets/media/logo.png';
 import MoreInfoButton from '../components/moreinfo';
 import HomeBody from '../components/home-body';
+import { motion } from 'framer-motion';
 
 
 const Home = () => {
     return(
-        <div className="container">
+        <motion.div className="container"
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1}}
+          exit={{ opacity: 0}}
+        
+        >
         <div className="bg-wrapper">
         <div className="bg-content">
           <div className="left-side">
@@ -20,7 +26,7 @@ const Home = () => {
         </div>
         </div>
         <HomeBody />
-        </div>
+        </motion.div>
 
     )
 }

@@ -145,6 +145,20 @@ body {
   padding: 30px 35px;
   color: white;
   font-size: 0.9em;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-content .right-side .more-info-btn a:hover {
+  -webkit-box-shadow: 10px 10px 15px -7px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 15px -7px rgba(0, 0, 0, 0.75);
+}
+
+.bg-content .right-side .more-info-btn a:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 0 0 #aaa;
+          box-shadow: 0 0 #aaa;
 }
 
 .body-wrapper {
@@ -221,5 +235,45 @@ body {
 .footer-wrapper p {
   padding-top: 33px;
   font-size: 1.5em;
+}
+
+.header-wrapper {
+  background-color: #0F9CBF;
+  color: white;
+  font-family: "Cinzel", sans-serif;
+}
+
+.header-wrapper p {
+  font-size: 2em;
+  padding: 15px 0px;
+}
+
+.about-wrapper .about-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 80%;
+  gap: 39px;
+  margin: 0px auto;
+}
+
+.about-wrapper .about-content-wrapper .left-side img {
+  border-radius: 50%;
+  height: 350px;
+}
+
+.about-wrapper .about-content-wrapper .left-side .mena-bio {
+  background-color: #B0DBE5;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 29px 50px;
+}
+
+.about-wrapper .about-content-wrapper .right-side {
+  background-color: #B0DBE5;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 25px 50px;
 }
 /*# sourceMappingURL=app.css.map */

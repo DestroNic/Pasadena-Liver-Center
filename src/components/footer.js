@@ -4,7 +4,7 @@ import Moment from 'react-moment';
 export default class Footer extends React.Component {
     render() {
 
-        let year = new Date().getFullYear();
+        
         return (
             <div className='footer-wrapper'>
                 

@@ -26,4 +26,24 @@
             padding: 25px 50px;
         }
     }
+
+    .staff-grid-wrapper {
+        .staff-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            width: 80%;
+            margin: auto;
+            .staff-member {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    border-radius: 50%;
+                    height: 250px;
+                    width: 250px;
+                }
+            }
+        }
+    }
 }

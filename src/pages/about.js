@@ -1,7 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Header from '../components/header';
-import mena from '../assets/media/mena.jpg'
+import mena from '../assets/media/mena.jpg';
+import aurelia from '../assets/media/staff/aurelia.jpg';
+import brenda from '../assets/media/staff/brenda.jpg';
+import iman from '../assets/media/staff/iman.jpg';
+import norma from '../assets/media/staff/norma.jpg';
+import ruby from '../assets/media/staff/ruby.jpg';
+import tam from '../assets/media/staff/tam.jpg';
+import yvette from '../assets/media/staff/yvette.jpg';
 
 const About = (props) => {
     let title1 = "About us";
@@ -68,6 +75,47 @@ const About = (props) => {
                 </div>
             </div>
             <Header header={title2} />
+            <div className="staff-grid-wrapper">
+                <div className="staff-grid">
+                    <div className="staff-member">
+                        <img src={norma} alt="Norma Carmona" />
+                        <strong>Norma Carmona</strong>
+                        <i>Medical Assistant</i>
+                    </div>
+                    <div className="staff-member">
+                        <img src={ruby} alt="Ruby Gonzales" />
+                        <strong>Ruby Gonzales</strong>
+                        <i>Medical Assistant</i>
+                    </div>
+                    <div className="staff-member">
+                        <img src={yvette} alt="Yvette Santoscoy" />
+                        <strong>Yvette Santoscoy</strong>
+                        <i>Office Manager</i>
+                    </div>
+                    <div className="staff-member">
+                        <img src={iman} alt="Iman Jooma" />
+                        <strong>Iman Jooma</strong>
+                        <i>Physician Assistant</i>
+                    </div>
+                    <div className="staff-member">
+                        <img src={aurelia} alt="Aurelia Sanchez" />
+                        <strong>Aurelia Sanchez</strong>
+                        <i>Medical Assistant</i>
+                    </div>
+                    <div className="staff-member">
+                        <img src={brenda} alt="Brenda Serbantez" />
+                        <strong>Brenda Serbantez</strong>
+                        <i>Receptionist</i>
+                    </div>
+                    <div></div>
+                    <div className="staff-member">
+                        <img src={tam} alt="Tam Nguyen" />
+                        <strong>Tam Nguyen</strong>
+                        <i>Receptionist</i>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
         </motion.div>
 
     )

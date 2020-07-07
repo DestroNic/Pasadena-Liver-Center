@@ -276,4 +276,33 @@ body {
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 25px 50px;
 }
+
+.about-wrapper .staff-grid-wrapper .staff-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  width: 80%;
+  margin: auto;
+}
+
+.about-wrapper .staff-grid-wrapper .staff-grid .staff-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-wrapper .staff-grid-wrapper .staff-grid .staff-member img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
 /*# sourceMappingURL=app.css.map */

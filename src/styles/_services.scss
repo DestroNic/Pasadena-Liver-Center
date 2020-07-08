@@ -1,0 +1,52 @@
+.service-wrapper {
+    .cards-wrapper{
+        width: 80%;
+        margin: auto;
+    .service-content {
+        
+        background-color: $secondary-blue;
+        @include shadow();
+        .service-header {
+            font-family: $cinzel;
+            font-size: 2em;
+            p {
+                padding-top: 20px;
+            }
+        }
+        .service-card{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-size: 1.1em;
+            .left-side {
+                padding: 0 0 25px 125px;
+            }
+            .right-side {
+                padding-right: 145px;
+            }
+        }
+    }
+    .service-content1{
+        background-color: $third-blue;
+        @include shadow();
+        .service-header {
+            font-family: $cinzel;
+            font-size: 2em;
+            p {
+                padding-top: 20px;
+            }
+        }
+        .service-card{
+            font-size: 1.1em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            .left-side {
+                padding-left: 157px;
+            }
+            .right-side {
+                padding:0 70px 25px 0;
+            }
+        }
+    }
+}
+}

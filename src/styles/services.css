@@ -1,0 +1,12 @@
+.service-wrapper .service-content {
+  width: 80%;
+  margin: auto;
+}
+
+.service-wrapper .service-content .service-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+/*# sourceMappingURL=services.css.map */

@@ -7,9 +7,10 @@
     ),
     url("../assets/media/main_bg.jpg");
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
   background-color: $secondary-blue;
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 }
 

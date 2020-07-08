@@ -3,7 +3,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -16,6 +15,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5))), url("../assets/media/main_bg.jpg");
   background-image: linear-gradient(white, rgba(255, 255, 255, 0.5)), url("../assets/media/main_bg.jpg");
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
   background-color: #B0DBE5;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -304,5 +304,73 @@ body {
   border-radius: 50%;
   height: 250px;
   width: 250px;
+  margin-bottom: 15px;
+}
+
+.service-wrapper .cards-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.service-wrapper .cards-wrapper .service-content {
+  background-color: #B0DBE5;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.service-wrapper .cards-wrapper .service-content .service-header {
+  font-family: "Cinzel", sans-serif;
+  font-size: 2em;
+}
+
+.service-wrapper .cards-wrapper .service-content .service-header p {
+  padding-top: 20px;
+}
+
+.service-wrapper .cards-wrapper .service-content .service-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  font-size: 1.1em;
+}
+
+.service-wrapper .cards-wrapper .service-content .service-card .left-side {
+  padding: 0 0 25px 125px;
+}
+
+.service-wrapper .cards-wrapper .service-content .service-card .right-side {
+  padding-right: 145px;
+}
+
+.service-wrapper .cards-wrapper .service-content1 {
+  background-color: #86C3D2;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.service-wrapper .cards-wrapper .service-content1 .service-header {
+  font-family: "Cinzel", sans-serif;
+  font-size: 2em;
+}
+
+.service-wrapper .cards-wrapper .service-content1 .service-header p {
+  padding-top: 20px;
+}
+
+.service-wrapper .cards-wrapper .service-content1 .service-card {
+  font-size: 1.1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.service-wrapper .cards-wrapper .service-content1 .service-card .left-side {
+  padding-left: 157px;
+}
+
+.service-wrapper .cards-wrapper .service-content1 .service-card .right-side {
+  padding: 0 70px 25px 0;
 }
 /*# sourceMappingURL=app.css.map */

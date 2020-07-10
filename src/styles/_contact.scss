@@ -1,0 +1,51 @@
+.contact-wrapper {
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .left-side{
+            .contact-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon-wrapper {
+                font-size: 2em;
+                color: $primary-blue;
+                }
+                .contact-detail {
+                    width: 50%;
+                    p:nth-child(1){
+                        font-family: $cinzel;
+                        color: $brown;
+                    }
+                }
+            }
+        }
+        .right-side {
+            div{
+                div{
+                    height: 40% !important;
+                        width: 40% !important;
+                    div {
+                        position: absolute !important;
+                        overflow: hidden !important;
+                        height: 100% !important;
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+    .contact-footer{
+        margin: 100px auto;
+
+        p:nth-child(1){
+            font-family: $cinzel;
+            color: $brown;
+            font-size: 1.2em;
+        }
+        p:nth-child(2){
+            font-size: 1.5em;
+        }
+        
+    }
+}

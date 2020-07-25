@@ -62,7 +62,7 @@ const Contact = () => {
                 <div className="contact-footer">
                     <p>Fibroscan (By appointment only)</p><br />
                     <p>Tuesday, Wednesday, and Fridays – 8:45am to 10:30am <br />
-Tuesday Afternoon – 1:00pm to 2:00pm (Outside referral or no follow up needed)</p>
+                    Tuesday Afternoon – 1:00pm to 2:00pm (Outside referral or no follow up needed)</p>
 
                 </div>
             </div>

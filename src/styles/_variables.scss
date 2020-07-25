@@ -32,3 +32,33 @@ $raleway: 'Raleway', sans-serif;
 @mixin shadow {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
+@mixin form-input {
+    .form-item {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            height: 28px;
+            font-size: 16px;
+            border: 4px solid $secondary-blue;
+            transition: 0.5s ease-in-out;
+            border-radius: 3px;
+
+            &:focus {
+                border: solid 4px $primary-blue;
+            }
+        }
+
+        select {
+            height: 35px;
+            font-size: 16px;
+            border: 4px solid $secondary-blue;
+            transition: 0.5s ease-in-out;
+
+            &:focus {
+                border: solid 4px $primary-blue;
+            }
+        }
+    }
+}

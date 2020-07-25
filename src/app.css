@@ -373,4 +373,342 @@ body {
 .service-wrapper .cards-wrapper .service-content1 .service-card .right-side {
   padding: 0 70px 25px 0;
 }
+
+.contact-wrapper .contact-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.contact-wrapper .contact-info .left-side .contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-wrapper .contact-info .left-side .contact-item .icon-wrapper {
+  font-size: 2em;
+  color: #0F9CBF;
+}
+
+.contact-wrapper .contact-info .left-side .contact-item .contact-detail {
+  width: 50%;
+}
+
+.contact-wrapper .contact-info .left-side .contact-item .contact-detail p:nth-child(1) {
+  font-family: "Cinzel", sans-serif;
+  color: #AC5645;
+}
+
+.contact-wrapper .contact-info .right-side div div {
+  height: 40% !important;
+  width: 40% !important;
+}
+
+.contact-wrapper .contact-info .right-side div div div {
+  position: absolute !important;
+  overflow: hidden !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.contact-wrapper .contact-footer {
+  margin: 100px auto;
+}
+
+.contact-wrapper .contact-footer p:nth-child(1) {
+  font-family: "Cinzel", sans-serif;
+  color: #AC5645;
+  font-size: 1.2em;
+}
+
+.contact-wrapper .contact-footer p:nth-child(2) {
+  font-size: 1.5em;
+}
+
+.form-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.form-wrapper .form-header {
+  font-family: "Cinzel", sans-serif;
+  color: #AC5645;
+  font-size: 1.5em;
+}
+
+.form-wrapper .patient-info-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.form-wrapper .patient-info-wrapper .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-wrapper .patient-info-wrapper .form-item input {
+  height: 28px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 3px;
+}
+
+.form-wrapper .patient-info-wrapper .form-item input:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .patient-info-wrapper .form-item select {
+  height: 35px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.form-wrapper .patient-info-wrapper .form-item select:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .emergency-contact-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.form-wrapper .emergency-contact-wrapper .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-wrapper .emergency-contact-wrapper .form-item input {
+  height: 28px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 3px;
+}
+
+.form-wrapper .emergency-contact-wrapper .form-item input:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .emergency-contact-wrapper .form-item select {
+  height: 35px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.form-wrapper .emergency-contact-wrapper .form-item select:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .doctor-info-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.form-wrapper .doctor-info-wrapper .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-wrapper .doctor-info-wrapper .form-item input {
+  height: 28px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 3px;
+}
+
+.form-wrapper .doctor-info-wrapper .form-item input:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .doctor-info-wrapper .form-item select {
+  height: 35px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.form-wrapper .doctor-info-wrapper .form-item select:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .pharmacy-info-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.form-wrapper .pharmacy-info-wrapper .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-wrapper .pharmacy-info-wrapper .form-item input {
+  height: 28px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 3px;
+}
+
+.form-wrapper .pharmacy-info-wrapper .form-item input:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .pharmacy-info-wrapper .form-item select {
+  height: 35px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.form-wrapper .pharmacy-info-wrapper .form-item select:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .first-insurance-info-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.form-wrapper .first-insurance-info-wrapper .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-wrapper .first-insurance-info-wrapper .form-item input {
+  height: 28px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 3px;
+}
+
+.form-wrapper .first-insurance-info-wrapper .form-item input:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .first-insurance-info-wrapper .form-item select {
+  height: 35px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.form-wrapper .first-insurance-info-wrapper .form-item select:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .second-insurance-info-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.form-wrapper .second-insurance-info-wrapper .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-wrapper .second-insurance-info-wrapper .form-item input {
+  height: 28px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 3px;
+}
+
+.form-wrapper .second-insurance-info-wrapper .form-item input:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .second-insurance-info-wrapper .form-item select {
+  height: 35px;
+  font-size: 16px;
+  border: 4px solid #B0DBE5;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.form-wrapper .second-insurance-info-wrapper .form-item select:focus {
+  border: solid 4px #0F9CBF;
+}
+
+.form-wrapper .btn {
+  height: 50px;
+  width: 150px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  background-color: #0F9CBF;
+  margin-top: 50px;
+}
 /*# sourceMappingURL=app.css.map */

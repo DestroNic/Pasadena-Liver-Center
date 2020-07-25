@@ -1,0 +1,66 @@
+.form-wrapper {
+    width: 80%;
+    margin: auto;
+    
+    .form-header {
+        font-family: $cinzel;
+        color: $brown;
+        font-size: 1.5em;
+        
+    }
+    .patient-info-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+
+        @include form-input();
+    }
+    .emergency-contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+
+        @include form-input();
+    }
+
+    .doctor-info-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+
+        @include form-input();
+    }
+
+    .pharmacy-info-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+
+        @include form-input();
+    }
+
+    .first-insurance-info-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+
+        @include form-input();
+    }
+
+    .second-insurance-info-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+
+        @include form-input();
+    }
+    .btn {
+        height: 50px;
+        width: 150px;
+        color: white;
+        font-family: $raleway;
+        font-size: 1em;
+        background-color: $primary-blue;
+        margin-top: 50px;
+    }
+}

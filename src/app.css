@@ -433,6 +433,12 @@ body {
   font-size: 1.5em;
 }
 
+.about-visit-info {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
 .form-wrapper {
   width: 80%;
   margin: auto;

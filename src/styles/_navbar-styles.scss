@@ -50,13 +50,17 @@
 
     }
 
+       
     .right-side {
         display: flex;
         justify-content: space-evenly;
         width: 50%;
         align-items: center;
 
-        
+        .nav-link-wrapper svg {
+            display: none;
+        }
+
 
         a {
             text-decoration: none;
@@ -128,3 +132,5 @@
         }   
     }
 }
+
+

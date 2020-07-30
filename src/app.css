@@ -81,6 +81,10 @@ body {
           align-items: center;
 }
 
+.nav-wrapper .right-side .nav-link-wrapper svg {
+  display: none;
+}
+
 .nav-wrapper .right-side a {
   text-decoration: none;
   color: black;
@@ -224,6 +228,10 @@ body {
   padding: 25px 60px;
   font-size: 1.2em;
   margin: 50px 0px;
+}
+
+.body-wrapper .bottom-card .grid-container .right-side {
+  margin-bottom: 15px;
 }
 
 .footer-wrapper {
@@ -716,5 +724,11 @@ body {
   font-size: 1em;
   background-color: #0F9CBF;
   margin-top: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+  .bg-wrapper .bg-content .right-side p {
+    font-size: 1.2em;
+  }
 }
 /*# sourceMappingURL=app.css.map */

@@ -30,6 +30,10 @@
                     @include home-text-align();
                 }
             }
+
+            .right-side {
+                margin-bottom: 15px;
+            }
         }
     }
 }

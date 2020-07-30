@@ -549,7 +549,7 @@ class VisitForm extends Component {
             </div>
             <div>
           <button className="btn" type="submit">
-            Save
+            Submit
           </button>
         </div>
 

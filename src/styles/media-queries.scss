@@ -83,9 +83,35 @@
                 }
             }
          }
-     
+     .about-visit-info {
+         font-size: 0.9em;
+         width: 70%;
+     }
+     .form-wrapper {
+         .patient-info-wrapper {
+             @include small-form-input();
+        }
+         
+         .emergency-contact-wrapper {
+            @include small-form-input();
+         }
+         .doctor-info-wrapper {
+            @include small-form-input();
+         }
+         .pharmacy-info-wrapper {
+            @include small-form-input();
+         }
+         .first-insurance-info-wrapper {
+            @include small-form-input();
+         }
+         .second-insurance-info-wrapper {
+            @include small-form-input();
+         }
 
- } 
+     }
+     
+    }
+    
 
  @media only screen and (max-width: 1110px) {
     .bg-wrapper {
@@ -352,6 +378,40 @@
         }
     }
 }    
+.about-visit-info {
+    font-size: 0.8em;
+    width: 70%;
+}
+.form-wrapper {
+    .form-header{
+        font-size: 1em;
+    }
+    .patient-info-wrapper {
+        @include form-1-column();
+        @include smaller-form-input();
+    }
+    .emergency-contact-wrapper {
+        @include form-1-column();
+        @include smaller-form-input();
+    }
+    .doctor-info-wrapper {
+        @include form-1-column();
+        @include smaller-form-input();
+    }
+    .pharmacy-info-wrapper {
+        @include form-1-column();
+        @include smaller-form-input();
+    }
+    .first-insurance-info-wrapper {
+        @include form-1-column();
+        @include smaller-form-input();
+    }
+    .second-insurance-info-wrapper {
+        @include form-1-column();
+        @include smaller-form-input();
+    }
+    
+}
 }
 
 @media only screen and (max-width: 600px) {

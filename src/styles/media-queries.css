@@ -41,6 +41,19 @@
   .service-wrapper .service-content1 .service-card .left-side p {
     font-size: 0.9em;
   }
+  .about-visit-info {
+    font-size: 0.9em;
+    width: 70%;
+  }
+  .form-wrapper .patient-info-wrapper .form-item label {
+    font-size: 0.9em;
+  }
+  .form-wrapper .patient-info-wrapper .form-item input {
+    font-size: 0.9em;
+  }
+  .form-wrapper .patient-info-wrapper .form-item select {
+    font-size: 0.9em;
+  }
 }
 
 @media only screen and (max-width: 1110px) {
@@ -241,6 +254,10 @@
   }
   .about-wrapper .staff-grid-wrapper .staff-grid .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid .staff-member i {
     font-size: 0.7em;
+  }
+  .about-visit-info {
+    font-size: 0.9em;
+    width: 70%;
   }
 }
 

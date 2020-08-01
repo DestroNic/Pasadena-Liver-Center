@@ -40,7 +40,7 @@ $raleway: 'Raleway', sans-serif;
 
         input {
             height: 28px;
-            font-size: 16px;
+            font-size: 1em;
             border: 4px solid $secondary-blue;
             transition: 0.5s ease-in-out;
             border-radius: 3px;
@@ -52,7 +52,7 @@ $raleway: 'Raleway', sans-serif;
 
         select {
             height: 35px;
-            font-size: 16px;
+            font-size: 1em;
             border: 4px solid $secondary-blue;
             transition: 0.5s ease-in-out;
 
@@ -61,4 +61,47 @@ $raleway: 'Raleway', sans-serif;
             }
         }
     }
+}
+@mixin form-3-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+@mixin form-2-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+}
+@mixin form-1-column {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@mixin small-form-input {
+    .form-item {
+        label {
+            font-size: 0.9em;
+        }
+   input {
+       font-size: 0.9em;
+   }
+   select {
+       font-size: 0.9em;
+   }
+}
+}
+@mixin smaller-form-input {
+    .form-item {
+        label {
+            font-size: 0.7em;
+        }
+   input {
+       font-size: 0.7em;
+   }
+   select {
+       font-size: 0.7em;
+   }
+}
+
 }

@@ -15,48 +15,36 @@
         
     }
     .patient-info-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 25px;
+        @include form-3-column();
 
         @include form-input();
     }
     .emergency-contact-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 25px;
+        @include form-3-column();
 
         @include form-input();
     }
 
     .doctor-info-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
+        @include form-2-column();
 
         @include form-input();
     }
 
     .pharmacy-info-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
+        @include form-2-column();
 
         @include form-input();
     }
 
     .first-insurance-info-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 25px;
+        @include form-3-column();
 
         @include form-input();
     }
 
     .second-insurance-info-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 25px;
+        @include form-3-column();
 
         @include form-input();
     }

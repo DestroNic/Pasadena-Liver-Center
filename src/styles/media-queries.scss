@@ -344,7 +344,25 @@
            }
         }
         }
-  
+    .contact-wrapper {
+        .contact-info {
+            .left-side {
+                .contact-item {
+                    .icon-wrapper {
+
+                    }
+                    .contact-detail {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+  }
+  .contact-footer {
+    p {
+        font-size: 0.8em;
+    }
+  }
 }
 
 @media only screen and (max-width:720px) {
@@ -411,6 +429,21 @@
         @include smaller-form-input();
     }
     
+}
+.contact-wrapper {
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+
+        .right-side {
+            height: 305px;
+            div {
+                div {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
 }
 }
 

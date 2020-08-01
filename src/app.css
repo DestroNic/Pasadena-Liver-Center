@@ -1016,6 +1016,12 @@ body {
   .service-wrapper .cards-wrapper .service-content1 .service-card .right-side img {
     height: 220px;
   }
+  .contact-wrapper .contact-info .left-side .contact-item .contact-detail {
+    font-size: 0.8em;
+  }
+  .contact-footer p {
+    font-size: 0.8em;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -1039,11 +1045,11 @@ body {
     font-size: 0.7em;
   }
   .about-visit-info {
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 70%;
   }
   .form-wrapper .form-header {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .form-wrapper .patient-info-wrapper {
     display: -ms-grid;
@@ -1051,11 +1057,29 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .form-wrapper .patient-info-wrapper .form-item label {
+    font-size: 0.7em;
+  }
+  .form-wrapper .patient-info-wrapper .form-item input {
+    font-size: 0.7em;
+  }
+  .form-wrapper .patient-info-wrapper .form-item select {
+    font-size: 0.7em;
+  }
   .form-wrapper .emergency-contact-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .form-wrapper .emergency-contact-wrapper .form-item label {
+    font-size: 0.7em;
+  }
+  .form-wrapper .emergency-contact-wrapper .form-item input {
+    font-size: 0.7em;
+  }
+  .form-wrapper .emergency-contact-wrapper .form-item select {
+    font-size: 0.7em;
   }
   .form-wrapper .doctor-info-wrapper {
     display: -ms-grid;
@@ -1063,11 +1087,29 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .form-wrapper .doctor-info-wrapper .form-item label {
+    font-size: 0.7em;
+  }
+  .form-wrapper .doctor-info-wrapper .form-item input {
+    font-size: 0.7em;
+  }
+  .form-wrapper .doctor-info-wrapper .form-item select {
+    font-size: 0.7em;
+  }
   .form-wrapper .pharmacy-info-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .form-wrapper .pharmacy-info-wrapper .form-item label {
+    font-size: 0.7em;
+  }
+  .form-wrapper .pharmacy-info-wrapper .form-item input {
+    font-size: 0.7em;
+  }
+  .form-wrapper .pharmacy-info-wrapper .form-item select {
+    font-size: 0.7em;
   }
   .form-wrapper .first-insurance-info-wrapper {
     display: -ms-grid;
@@ -1075,11 +1117,44 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .form-wrapper .first-insurance-info-wrapper .form-item label {
+    font-size: 0.7em;
+  }
+  .form-wrapper .first-insurance-info-wrapper .form-item input {
+    font-size: 0.7em;
+  }
+  .form-wrapper .first-insurance-info-wrapper .form-item select {
+    font-size: 0.7em;
+  }
   .form-wrapper .second-insurance-info-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .form-wrapper .second-insurance-info-wrapper .form-item label {
+    font-size: 0.7em;
+  }
+  .form-wrapper .second-insurance-info-wrapper .form-item input {
+    font-size: 0.7em;
+  }
+  .form-wrapper .second-insurance-info-wrapper .form-item select {
+    font-size: 0.7em;
+  }
+  .contact-wrapper .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-wrapper .contact-info .right-side {
+    height: 305px;
+  }
+  .contact-wrapper .contact-info .right-side div div {
+    width: 100%;
   }
 }
 

@@ -17,14 +17,13 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
     }
 
     openNav(){
-        document.getElementById('nav-menu').classList.add('responsive');
+        
         document.getElementById('bars').style.display = "none";
-        document.getElementById('left-menu').style.cssText = 'width: 50%; justify-content: space-around';
-        document.getElementById('menu-parent').style.cssText = "justify-content: flex-start";
+        document.getElementById('nav-menu').style.width = '50%';
     }
 
     closeNav(){
-        document.getElementById("nav-menu").classList.remove('responsive');
+        document.getElementById('nav-menu').style.width = '0%';
         document.getElementById('bars').style.display = "block";
     }
     
@@ -38,7 +37,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
                         Sechedule an appointment
                     </NavLink>
                 </div>
-                <div className="right-side"  id="nav-menu">
+                <div className="right-side responsive"  id="nav-menu">
                 <div className="nav-link-wrapper">
                         <a href="#" onClick={this.closeNav}>&times;</a>
                     </div>

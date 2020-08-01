@@ -221,6 +221,7 @@
                 font-size: 0.8em;
             }
         }
+
         .right-side {
             .nav-link-wrapper a {
                 display: none;
@@ -232,7 +233,11 @@
             }
             
         }
+    
     }
+
+
+
     .body-wrapper {
         width: 100%;
         .top-card {
@@ -367,16 +372,17 @@
     .right-side.responsive {
         background-color:$primary-blue ;
         height: 100%;
-        width: 50%;
+        width: 0%;
         position: fixed;
         right: 0;
         top: 0;
         z-index: 2;
-        transition: 0.5s ease-in-out;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        transition: 0.5s ease-in-out;
     }
+    
     
     .right-side.responsive  {
         .nav-link-wrapper {
@@ -390,6 +396,7 @@
             a {
                 display: block;
                 color: white;
+                transition: 1s ease-in-out;
                 &:hover {
                     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
                         background-color: transparent;
@@ -402,6 +409,7 @@
                 position: absolute;
                 font-size: 2.7em;
                 z-index: 5;
+                transition: 1s ease-in-out;
             }
             &:nth-child(2) {
                 margin-top: 75px;

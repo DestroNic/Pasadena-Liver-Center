@@ -47,6 +47,44 @@
              width: 90%;
          }
      }
+     .service-wrapper {
+         .cards-wrapper {
+             width: 95%;
+             .service-content {
+                .service-header {  
+                    
+                }
+                .service-card {
+                    
+                    .left-side {
+                    }
+                    .right-side {
+                        padding-right: 100px;
+                        p {
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+         }
+         .service-content1 {
+                .service-header {  
+                    
+                }
+                .service-card {
+                    .left-side {
+                        padding-left: 100px;
+                        p {
+                            font-size: 0.9em;
+                        }
+                    }
+                    .right-side {
+                    }
+                }
+            }
+         }
+     
+
  } 
 
  @media only screen and (max-width: 1110px) {
@@ -78,6 +116,51 @@
 
         
     }
+    .service-wrapper {
+        .cards-wrapper {
+            width: 95%;
+            .service-content {
+               .service-header {  
+                   
+               }
+               .service-card {
+                   
+                   .left-side {
+                       img {
+                           height: 250px;
+                       }
+                   }
+                   .right-side {
+                       padding-right: 80px;
+                       p {
+                           font-size: 0.8em;
+                       }
+                   }
+               }
+           }
+        }
+        .cards-wrapper {
+            .service-content1 {
+               .service-header {  
+                   
+               }
+               .service-card {
+                   .left-side {
+                       padding-left: 80px;
+                       p {
+                           font-size: 0.8em;
+                       }
+                   }
+                   .right-side {
+                       
+                       img {
+                           height: 250px;
+                       }
+                   }
+               }
+           }
+        }
+        }
 
  }
 
@@ -185,7 +268,57 @@
                 }
             }
         }
-    }   
+    } 
+    .service-wrapper {
+        .cards-wrapper {
+            .service-content {
+               .service-header {  
+                   
+               }
+               .service-card {
+                   display: flex;
+                   flex-direction: column;
+                   .left-side {
+                       padding: 0px;
+                       img {
+                           height: 220px;
+                       }
+                   }
+                   .right-side {
+                       padding: 10px 30px;
+                       p {
+                           font-size: 0.7em;
+                       }
+                   }
+               }
+           }
+        }
+        .cards-wrapper {
+            .service-content1 {
+            
+               .service-header {  
+                   
+               }
+               .service-card {
+                display: flex;
+                flex-direction: column-reverse;
+                   .left-side {
+                       padding: 10px 30px;
+                       p {
+                           font-size: 0.7em;
+                       }
+                   }
+                   .right-side {
+                       padding: 0px;
+                       img {
+                           height: 220px;
+                       }
+                   }
+               }
+           }
+        }
+        }
+  
 }
 
 @media only screen and (max-width:720px) {
@@ -429,5 +562,54 @@
         }
     }
 }    
+.service-wrapper {
+    .cards-wrapper {
+        .service-content {
+           .service-header {  
+               
+           }
+           .service-card {
+               display: flex;
+               flex-direction: column;
+               .left-side {
+                   padding: 0px;
+                   img {
+                       height: 190px;
+                   }
+               }
+               .right-side {
+                   padding: 10px 30px;
+                   p {
+                       font-size: 0.7em;
+                   }
+               }
+           }
+       }
+    }
+    .cards-wrapper {
+        .service-content1 {
+        
+           .service-header {  
+               
+           }
+           .service-card {
+            display: flex;
+            flex-direction: column-reverse;
+               .left-side {
+                   padding: 10px 30px;
+                   p {
+                       font-size: 0.7em;
+                   }
+               }
+               .right-side {
+                   padding: 0px;
+                   img {
+                       height: 190px;
+                   }
+               }
+           }
+       }
+    }
+    }
 }
 

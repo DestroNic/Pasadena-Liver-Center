@@ -16,9 +16,13 @@
         .service-card{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            font-size: 1.1em;
+            font-size: 1em;
+            gap: 0px 25px;
             .left-side {
                 padding: 0 0 25px 125px;
+                img {
+                    height: 300px;
+                }
             }
             .right-side {
                 padding-right: 145px;
@@ -36,15 +40,18 @@
             }
         }
         .service-card{
-            font-size: 1.1em;
+            font-size: 1em;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            
+            gap: 0px 25px;
             .left-side {
                 padding-left: 157px;
             }
             .right-side {
                 padding:0 70px 25px 0;
+                img {
+                    height: 300px;
+                }
             }
         }
     }

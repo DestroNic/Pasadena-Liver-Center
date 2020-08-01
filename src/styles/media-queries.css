@@ -23,6 +23,9 @@
   .body-wrapper .bottom-card .grid-container .left-side p {
     font-size: 1em;
   }
+  .about-wrapper .about-content-wrapper {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 1110px) {
@@ -34,6 +37,15 @@
   }
   .bg-wrapper .bg-content .right-side p {
     font-size: 0.7em;
+  }
+  .about-wrapper .about-content-wrapper {
+    width: 98%;
+  }
+  .about-wrapper .about-content-wrapper .left-side .mena-bio h4, .about-wrapper .about-content-wrapper .left-side i, .about-wrapper .about-content-wrapper .left-side p {
+    font-size: 0.9em;
+  }
+  .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
+    font-size: 0.9em;
   }
 }
 
@@ -94,7 +106,7 @@
     width: 110%;
   }
   .body-wrapper .top-card .grid-container .right-side p {
-    font-size: 0.9em;
+    font-size: 0.5em;
   }
   .body-wrapper .bottom-card p {
     font-size: 1.6em;
@@ -113,6 +125,44 @@
   }
   .body-wrapper .bottom-card .grid-container .left-side p {
     font-size: 0.9em;
+  }
+  .about-wrapper .about-content-wrapper {
+    width: 98%;
+  }
+  .about-wrapper .about-content-wrapper .left-side .mena-bio h4, .about-wrapper .about-content-wrapper .left-side i, .about-wrapper .about-content-wrapper .left-side p {
+    font-size: 0.8em;
+  }
+  .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
+    font-size: 0.8em;
+  }
+  .about-wrapper .staff-grid-wrapper .staff-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid .staff-member i {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .about-wrapper .about-content-wrapper {
+    width: 98%;
+  }
+  .about-wrapper .about-content-wrapper .left-side img {
+    height: 300px;
+  }
+  .about-wrapper .about-content-wrapper .left-side .mena-bio h4, .about-wrapper .about-content-wrapper .left-side i, .about-wrapper .about-content-wrapper .left-side p {
+    font-size: 0.7em;
+  }
+  .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
+    font-size: 0.7em;
+  }
+  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member img {
+    height: 220px;
+    width: 220px;
+  }
+  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid .staff-member i {
+    font-size: 0.7em;
   }
 }
 
@@ -181,11 +231,39 @@
   .body-wrapper .bottom-card .grid-container .left-side p {
     font-size: 0.9em;
   }
+  .about-wrapper .about-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-wrapper .about-content-wrapper .left-side img {
+    height: 300px;
+  }
+  .about-wrapper .about-content-wrapper .left-side .mena-bio h4, .about-wrapper .about-content-wrapper .left-side i, .about-wrapper .about-content-wrapper .left-side p {
+    font-size: 0.7em;
+  }
+  .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
+    font-size: 0.7em;
+  }
+  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member img {
+    height: 180px;
+    width: 180px;
+  }
+  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid .staff-member i {
+    font-size: 0.7em;
+  }
 }
 
 @media only screen and (max-width: 520px) {
   .nav-wrapper .left-side a {
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 0.7em;
+    padding: 5px 10px;
   }
   .nav-wrapper .left-side img {
     display: none;
@@ -212,7 +290,8 @@
     height: 25vh;
   }
   .body-wrapper .top-card .grid-container .right-side p {
-    font-size: 0.9em;
+    font-size: 0.7em;
+    padding: 0px 15px;
   }
   .body-wrapper .bottom-card p {
     font-size: 1.5em;
@@ -230,21 +309,22 @@
     height: 25vh;
   }
   .body-wrapper .bottom-card .grid-container .left-side p {
-    font-size: 0.9em;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .nav-wrapper .left-side a {
-    margin-top: 15px;
-    margin-left: 10px;
     font-size: 0.7em;
-    padding: 5px 10px;
+    padding: 0px 15px;
   }
-  .body-wrapper .top-card p {
-    font-size: 1.5em;
+  .about-wrapper .about-content-wrapper {
+    width: 98%;
   }
-  .body-wrapper .top-card .grid-container {
+  .about-wrapper .about-content-wrapper .left-side img {
+    height: 250px;
+  }
+  .about-wrapper .about-content-wrapper .left-side .mena-bio h4, .about-wrapper .about-content-wrapper .left-side i, .about-wrapper .about-content-wrapper .left-side p {
+    font-size: 0.7em;
+  }
+  .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
+    font-size: 0.7em;
+  }
+  .about-wrapper .staff-grid-wrapper .staff-grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -253,31 +333,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .body-wrapper .top-card .grid-container .left-side iframe {
-    height: 25vh;
+  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member img {
+    height: 220px;
+    width: 220px;
   }
-  .body-wrapper .top-card .grid-container .right-side p {
-    font-size: 0.9em;
-    padding: 0px 15px;
-  }
-  .body-wrapper .bottom-card p {
-    font-size: 1.5em;
-  }
-  .body-wrapper .bottom-card .grid-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .body-wrapper .bottom-card .grid-container .right-side iframe {
-    height: 25vh;
-  }
-  .body-wrapper .bottom-card .grid-container .left-side p {
-    font-size: 0.9em;
-    padding: 0px 15px;
+  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid .staff-member i {
+    font-size: 0.7em;
   }
 }
 /*# sourceMappingURL=media-queries.css.map */

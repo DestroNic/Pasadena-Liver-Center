@@ -42,6 +42,11 @@
             }
          }
      }
+     .about-wrapper {
+         .about-content-wrapper{
+             width: 90%;
+         }
+     }
  } 
 
  @media only screen and (max-width: 1110px) {
@@ -58,6 +63,22 @@
             }
         }
     }
+    .about-wrapper {
+        .about-content-wrapper{
+            width: 98%;
+            .left-side {
+                .mena-bio h4, i, p {
+                    font-size: 0.9em;
+                }
+            }
+            .right-side strong, p {
+                font-size: 0.9em; 
+            }
+        }
+
+        
+    }
+
  }
 
  @media only screen and (max-width: 940px) {
@@ -118,7 +139,7 @@
                 }
                 .right-side {
                     p{
-                        font-size: 0.9em;
+                        font-size: 0.5em;
                     }
                 }
             }
@@ -141,7 +162,63 @@
                }
            }
         }
+    }
+    .about-wrapper {
+        .about-content-wrapper{
+            width: 98%;
+            .left-side {
+                .mena-bio h4, i, p {
+                    font-size: 0.8em;
+                }
+            }
+            .right-side strong, p {
+                font-size: 0.8em; 
+            }
+        }
+        .staff-grid-wrapper {
+            .staff-grid {
+                grid-template-columns: 1fr 1fr;
+                .staff-member {
+                    strong, i {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
     }   
+}
+
+@media only screen and (max-width:720px) {
+    .about-wrapper {
+        .about-content-wrapper{
+            width: 98%;
+            .left-side {
+                img {
+                    height: 300px;
+                }
+                .mena-bio h4, i, p {
+                    font-size: 0.7em;
+                }
+            }
+            .right-side strong, p {
+                font-size: 0.7em; 
+            }
+        }
+    
+    .staff-grid-wrapper {
+        .staff-grid {
+            .staff-member {
+                img {
+                    height: 220px;
+                    width: 220px;
+                }
+                strong, i {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+}    
 }
 
 @media only screen and (max-width: 600px) {
@@ -211,13 +288,47 @@
            }
         }
     }
+    .about-wrapper {
+        .about-content-wrapper{
+            display: flex;
+            flex-direction: column;
+            .left-side {
+                img {
+                    height: 300px;
+                }
+                .mena-bio h4, i, p {
+                    font-size: 0.7em;
+                }
+            }
+            .right-side strong, p {
+                font-size: 0.7em; 
+            }
+        }
+    
+    .staff-grid-wrapper {
+        .staff-grid {
+            .staff-member {
+                img {
+                    height: 180px;
+                    width: 180px;
+                }
+                strong, i {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+}
 }
 
 @media only screen and (max-width: 520px) {
     .nav-wrapper {
         .left-side{
             a {
-                margin-top: 20px;
+                margin-top: 15px;
+                margin-left: 10px;
+                font-size: 0.7em;
+                padding: 5px 10px;
             }
             img {
                 display: none;
@@ -257,62 +368,7 @@
                 }
                 .right-side {
                     p{
-                        font-size: 0.9em;
-                    }
-                }
-            }
-            
-        }
-        .bottom-card {
-            p {
-                font-size: 1.5em;
-            }
-            .grid-container {
-                display: flex;
-                flex-direction: column-reverse;
-                .right-side {
-                    iframe {
-                        height: 25vh;
-                    }
-                }
-                .left-side {
-                   p {
-                       font-size: 0.9em;
-                   }
-               }
-           }
-        }
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    .nav-wrapper {
-        .left-side{
-            a {
-                margin-top: 15px;
-                margin-left: 10px;
-                font-size: 0.7em;
-                padding: 5px 10px;
-            }
-            
-        }
-    }
-    .body-wrapper {
-        .top-card {
-            p {
-                font-size: 1.5em;
-            }
-            .grid-container {
-                display: flex;
-                flex-direction: column;
-                .left-side {
-                    iframe {
-                        height: 25vh;
-                    }
-                }
-                .right-side {
-                    p{
-                        font-size: 0.9em;
+                        font-size: 0.7em;
                         padding: 0px 15px;
                     }
                 }
@@ -333,11 +389,45 @@
                 }
                 .left-side {
                    p {
-                    font-size: 0.9em;
-                    padding: 0px 15px;
+                       font-size: 0.7em;
+                       padding: 0px 15px;
                    }
                }
            }
         }
     }
+
+    .about-wrapper {
+        .about-content-wrapper{
+            width: 98%;
+            .left-side {
+                img {
+                    height: 250px;
+                }
+                .mena-bio h4, i, p {
+                    font-size: 0.7em;
+                }
+            }
+            .right-side strong, p {
+                font-size: 0.7em; 
+            }
+        }
+    
+    .staff-grid-wrapper {
+        .staff-grid {
+            display: flex;
+            flex-direction: column;
+            .staff-member {
+                img {
+                    height: 220px;
+                    width: 220px;
+                }
+                strong, i {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+}    
 }
+

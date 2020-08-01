@@ -66,10 +66,11 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
                             Contact
                         </NavLink>
                     </div>
-                    <div className="nav-link-wrapper" id="bars" onClick={this.openNav}>
+                    
+                </div>
+                <div className="nav-link-wrapper" id="bars" onClick={this.openNav}>
                             <FontAwesomeIcon icon={faBars} />
                     </div>
-                </div>
             </div>
         )
 }

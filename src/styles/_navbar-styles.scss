@@ -58,15 +58,13 @@
         align-items: center;
 
         .nav-link-wrapper {
-            svg {
-            display: none;
-            color: $primary-blue;
-            }
 
             &:nth-child(1) {
                 display: none;
             }
         }
+
+        
 
 
         a {
@@ -95,6 +93,10 @@
 
         }
     }
+    .nav-link-wrapper svg{
+        display: none;
+        color: $primary-blue;
+}
 
 }
 

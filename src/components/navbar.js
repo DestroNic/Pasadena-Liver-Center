@@ -17,50 +17,57 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
     }
 
     openNav(){
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById('nav-menu').classList.add('responsive');
+        document.getElementById('bars').style.display = "none";
+        document.getElementById('left-menu').style.cssText = 'width: 50%; justify-content: space-around';
+        document.getElementById('menu-parent').style.cssText = "justify-content: flex-start";
     }
 
     closeNav(){
-        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("nav-menu").classList.remove('responsive');
+        document.getElementById('bars').style.display = "block";
     }
     
 
     render(){
         return(
-            <div className="nav-wrapper">
-                <div className="left-side">
+            <div className="nav-wrapper" id="menu-parent">
+                <div className="left-side" id="left-menu">
                     <img src={logo} alt="logo" />
                     <NavLink to="/about-visit">
                         Sechedule an appointment
                     </NavLink>
                 </div>
-                <div className="right-side">
+                <div className="right-side"  id="nav-menu">
+                <div className="nav-link-wrapper">
+                        <a href="#" onClick={this.closeNav}>&times;</a>
+                    </div>
                     <div className="nav-link-wrapper">
-                        <NavLink exact to="/" activeClassName="nav-link-active">
+                        <NavLink exact to="/" activeClassName="nav-link-active" onClick={this.closeNav}>
                             Home
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">
-                        <NavLink to="/about" activeClassName="nav-link-active">
+                        <NavLink to="/about" activeClassName="nav-link-active" onClick={this.closeNav}>
                             About
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">
-                        <NavLink to="/services" activeClassName="nav-link-active">
+                        <NavLink to="/services" activeClassName="nav-link-active" onClick={this.closeNav}>
                             Services
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">
-                        <NavLink  to="/about-visit" activeClassName="nav-link-active">
+                        <NavLink  to="/about-visit" activeClassName="nav-link-active" onClick={this.closeNav}>
                             About your visit
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">
-                        <NavLink to="/contact" activeClassName="nav-link-active">
+                        <NavLink to="/contact" activeClassName="nav-link-active" onClick={this.closeNav}>
                             Contact
                         </NavLink>
                     </div>
-                    <div className="nav-link-wrapper" onClick={this.openNav}>
+                    <div className="nav-link-wrapper" id="bars" onClick={this.openNav}>
                             <FontAwesomeIcon icon={faBars} />
                     </div>
                 </div>

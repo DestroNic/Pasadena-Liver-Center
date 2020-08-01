@@ -83,6 +83,11 @@ body {
 
 .nav-wrapper .right-side .nav-link-wrapper svg {
   display: none;
+  color: #0F9CBF;
+}
+
+.nav-wrapper .right-side .nav-link-wrapper:nth-child(1) {
+  display: none;
 }
 
 .nav-wrapper .right-side a {
@@ -1022,6 +1027,46 @@ body {
   .contact-footer p {
     font-size: 0.8em;
   }
+  .nav-wrapper .right-side.responsive {
+    background-color: #0F9CBF;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .nav-wrapper .right-side.responsive .nav-link-wrapper svg {
+    position: absolute;
+    top: 28px;
+    right: 38px;
+    z-index: 1;
+  }
+  .nav-wrapper .right-side.responsive .nav-link-wrapper a {
+    display: block;
+    color: white;
+  }
+  .nav-wrapper .right-side.responsive .nav-link-wrapper a:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    background-color: transparent;
+  }
+  .nav-wrapper .right-side.responsive .nav-link-wrapper:nth-child(1) {
+    margin-left: 120px;
+    font-size: 2.5em;
+    z-index: 5;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -1154,7 +1199,7 @@ body {
     height: 305px;
   }
   .contact-wrapper .contact-info .right-side div div {
-    width: 100%;
+    width: 100% !important;
   }
 }
 

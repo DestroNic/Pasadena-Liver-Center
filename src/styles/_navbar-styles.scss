@@ -57,8 +57,15 @@
         width: 50%;
         align-items: center;
 
-        .nav-link-wrapper svg {
+        .nav-link-wrapper {
+            svg {
             display: none;
+            color: $primary-blue;
+            }
+
+            &:nth-child(1) {
+                display: none;
+            }
         }
 
 

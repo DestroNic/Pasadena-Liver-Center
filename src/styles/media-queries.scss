@@ -363,6 +363,53 @@
         font-size: 0.8em;
     }
   }
+  .nav-wrapper{
+    .right-side.responsive {
+        background-color:$primary-blue ;
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        transition: 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .right-side.responsive  {
+        .nav-link-wrapper {
+            svg {
+                position: absolute;
+                top: 28px;
+                right: 38px;
+                z-index: 1;
+            }
+    
+            a {
+                display: block;
+                color: white;
+                &:hover {
+                    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                        background-color: transparent;
+                }
+            }
+    
+            &:nth-child(1) {
+                display: block;
+                left: 15px;
+                position: absolute;
+                font-size: 2.7em;
+                z-index: 5;
+            }
+            &:nth-child(2) {
+                margin-top: 75px;
+            }
+            
+        }
+    }
+    }
 }
 
 @media only screen and (max-width:720px) {
@@ -445,7 +492,39 @@
         }
     }
 }
+.nav-wrapper{
+ 
+    .right-side.responsive  {
+        .nav-link-wrapper {
+            svg {
+                position: absolute;
+                top: 28px;
+                right: 38px;
+                z-index: 1;
+            }
+    
+            a {
+                display: block;
+                color: white;
+                &:hover {
+                    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                        background-color: transparent;
+                }
+            }
+    
+            // &:nth-child(1) {
+            //     display: block;
+            //     margin-left: 245px;
+            //     font-size: 2.7em;
+            //     z-index: 5;
+            // }
+    
+            
+        }
+    }
+    }
 }
+
 
 @media only screen and (max-width: 600px) {
     .bg-wrapper {
@@ -545,6 +624,21 @@
         }
     }
 }
+.nav-wrapper {
+.right-side.responsive  {
+        .nav-link-wrapper {
+    
+            // &:nth-child(1) {
+            //     display: block;
+            //     margin-left: 170px;
+            //     font-size: 2.7em;
+            //     z-index: 5;
+            // }
+    
+            
+        }
+    }
+    }
 }
 
 @media only screen and (max-width: 520px) {
@@ -560,6 +654,12 @@
                 display: none;
             }
 
+
+        }
+        .right-side {
+            .nav-link-wrapper svg {
+                margin-top: 15px;
+            }
         }
         
     }

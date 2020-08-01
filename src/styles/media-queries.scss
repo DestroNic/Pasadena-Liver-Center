@@ -216,6 +216,7 @@
         }
     }
     .nav-wrapper {
+        justify-content: flex-start;
         .left-side{
             a {
                 font-size: 0.8em;
@@ -226,12 +227,17 @@
             .nav-link-wrapper a {
                 display: none;
             }
-            .nav-link-wrapper svg {
-                display: block;
-                font-size: 1.5em;
-                cursor: pointer;
-            }
             
+            
+        }
+        .nav-link-wrapper svg {
+            display: block;
+            font-size: 1.2em;
+            cursor: pointer;
+            position: fixed;
+            right: 25px;
+            top: 20px;
+            color: $primary-blue;
         }
     
     }
@@ -377,10 +383,12 @@
         right: 0;
         top: 0;
         z-index: 2;
+        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         transition: 0.5s ease-in-out;
+       
     }
     
     

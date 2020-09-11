@@ -61,7 +61,7 @@ const About = (props) => {
                     Cedars-Sinai Transplant Center
                     AASLD – American Association For The Study Of Liver Diseases
                     EASL – European Association For The Study Of The Liver
-                    White Memorial Medical Center
+                    Huntington Memorial Medical Center
                     </p>
 
 

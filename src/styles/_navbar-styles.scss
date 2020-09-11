@@ -20,7 +20,8 @@
 
     .left-side {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
+        padding-left: 5%;
         width: 50%;
         align-items: center;
         
@@ -50,7 +51,9 @@
 
     }
 
-       
+    #nav-menu {
+        width: 50%;
+    }
     .right-side {
         display: flex;
         justify-content: space-evenly;
@@ -63,6 +66,8 @@
                 display: none;
             }
         }
+
+
 
         
 

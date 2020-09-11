@@ -114,6 +114,7 @@
     
 
  @media only screen and (max-width: 1110px) {
+    
     .bg-wrapper {
         height: 80vh;
         .bg-content {
@@ -191,6 +192,8 @@
  }
 
  @media only screen and (max-width: 940px) {
+    
+    
     .bg-wrapper {
         height: 75vh;
         .bg-content {
@@ -201,6 +204,7 @@
                     height: 30vh;;
                 }
             }
+            
             .right-side  {
                 justify-content: center;
                 p {
@@ -234,7 +238,7 @@
             display: block;
             font-size: 1.2em;
             cursor: pointer;
-            position: fixed;
+            position: absolute;
             right: 25px;
             top: 20px;
             color: $primary-blue;
@@ -425,6 +429,14 @@
             
         }
     }
+    }
+}
+
+@media only screen and (min-width: 940px) {
+    .nav-wrapper {
+        #nav-menu[style]{
+            width: 50% !important;
+        }
     }
 }
 

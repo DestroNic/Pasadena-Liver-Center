@@ -33,9 +33,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
             <div className="nav-wrapper" id="menu-parent">
                 <div className="left-side" id="left-menu">
                     <img src={logo} alt="logo" />
-                    <NavLink to="/about-visit">
-                        Sechedule an appointment
-                    </NavLink>
+                    
                 </div>
                 <div className="right-side responsive"  id="nav-menu">
                 <div className="nav-link-wrapper">

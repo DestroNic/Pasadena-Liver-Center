@@ -34,8 +34,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 5%;
   width: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -68,6 +70,10 @@ body {
   height: 80px;
 }
 
+.nav-wrapper #nav-menu {
+  width: 50%;
+}
+
 .nav-wrapper .right-side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,11 +85,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.nav-wrapper .right-side .nav-link-wrapper svg {
-  display: none;
-  color: #0F9CBF;
 }
 
 .nav-wrapper .right-side .nav-link-wrapper:nth-child(1) {
@@ -116,6 +117,11 @@ body {
           transform: translateY(4px);
   -webkit-box-shadow: 0 0 #aaa;
           box-shadow: 0 0 #aaa;
+}
+
+.nav-wrapper .nav-link-wrapper svg {
+  display: none;
+  color: #0F9CBF;
 }
 
 .bg-content {
@@ -290,17 +296,17 @@ body {
   padding: 15px 20px;
 }
 
-.about-wrapper .staff-grid-wrapper .staff-grid {
+.about-wrapper .staff-grid-wrapper .staff-grid-2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 25px;
   width: 80%;
   margin: auto;
 }
 
-.about-wrapper .staff-grid-wrapper .staff-grid .staff-member {
+.about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,11 +319,83 @@ body {
           align-items: center;
 }
 
-.about-wrapper .staff-grid-wrapper .staff-grid .staff-member img {
+.about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member img {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  margin: 50px 0 25px 0;
+}
+
+.about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member p {
+  width: 80%;
+  margin: auto;
+  background-color: #B0DBE5;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 29px 50px;
+}
+
+.about-wrapper .staff-grid-wrapper .staff-grid-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  width: 80%;
+  margin: auto;
+}
+
+.about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member img {
   border-radius: 50%;
   height: 250px;
   width: 250px;
-  margin-bottom: 15px;
+  margin: 50px 0 25px 0;
+}
+
+.about-wrapper .staff-grid-wrapper .staff-grid-2s {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  width: 56%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin: 50px 0 25px 0;
 }
 
 .service-wrapper .cards-wrapper {
@@ -842,6 +920,9 @@ body {
   .form-wrapper .second-insurance-info-wrapper .form-item select {
     font-size: 0.9em;
   }
+  .footer-wrapper p {
+    font-size: 1.4em;
+  }
 }
 
 @media only screen and (max-width: 1110px) {
@@ -884,6 +965,9 @@ body {
   .service-wrapper .cards-wrapper .service-content1 .service-card .right-side img {
     height: 250px;
   }
+  .footer-wrapper p {
+    font-size: 1.3em;
+  }
 }
 
 @media only screen and (max-width: 940px) {
@@ -913,16 +997,25 @@ body {
     padding: 10px 15px;
     font-size: 0.8em;
   }
+  .nav-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .nav-wrapper .left-side a {
     font-size: 0.8em;
   }
   .nav-wrapper .right-side .nav-link-wrapper a {
     display: none;
   }
-  .nav-wrapper .right-side .nav-link-wrapper svg {
+  .nav-wrapper .nav-link-wrapper svg {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.2em;
     cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    color: #0F9CBF;
   }
   .body-wrapper {
     width: 100%;
@@ -972,11 +1065,15 @@ body {
   .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
     font-size: 0.8em;
   }
-  .about-wrapper .staff-grid-wrapper .staff-grid {
+  .about-wrapper .staff-grid-wrapper .staff-grid-2, .about-wrapper .staff-grid-wrapper .staff-grid-3, .about-wrapper .staff-grid-wrapper .staff-grid-2s {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid .staff-member i {
+  .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member img, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member img, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member img {
+    height: 250px;
+    width: 250px;
+  }
+  .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member p {
     font-size: 0.8em;
   }
   .service-wrapper .cards-wrapper .service-content .service-card {
@@ -1030,12 +1127,12 @@ body {
   .nav-wrapper .right-side.responsive {
     background-color: #0F9CBF;
     height: 100%;
+    width: 0%;
     position: fixed;
     right: 0;
     top: 0;
     z-index: 2;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+    overflow-x: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1046,6 +1143,8 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   .nav-wrapper .right-side.responsive .nav-link-wrapper svg {
     position: absolute;
@@ -1056,6 +1155,8 @@ body {
   .nav-wrapper .right-side.responsive .nav-link-wrapper a {
     display: block;
     color: white;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
   }
   .nav-wrapper .right-side.responsive .nav-link-wrapper a:hover {
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
@@ -1063,9 +1164,28 @@ body {
     background-color: transparent;
   }
   .nav-wrapper .right-side.responsive .nav-link-wrapper:nth-child(1) {
-    margin-left: 120px;
-    font-size: 2.5em;
+    display: block;
+    left: 15px;
+    position: absolute;
+    font-size: 2.7em;
     z-index: 5;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .nav-wrapper .right-side.responsive .nav-link-wrapper:nth-child(2) {
+    margin-top: 75px;
+  }
+  .footer-wrapper p {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 940px) {
+  .nav-wrapper #nav-menu[style] {
+    width: 50% !important;
+  }
+  .footer-wrapper p {
+    font-size: 1em;
   }
 }
 
@@ -1082,11 +1202,14 @@ body {
   .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
     font-size: 0.7em;
   }
-  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member img {
+  .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member img, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member img, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member img {
     height: 220px;
     width: 220px;
   }
-  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid .staff-member i {
+  .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member p {
+    width: 65%;
+  }
+  .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member p {
     font-size: 0.7em;
   }
   .about-visit-info {
@@ -1201,6 +1324,24 @@ body {
   .contact-wrapper .contact-info .right-side div div {
     width: 100% !important;
   }
+  .nav-wrapper .right-side.responsive .nav-link-wrapper svg {
+    position: absolute;
+    top: 28px;
+    right: 38px;
+    z-index: 1;
+  }
+  .nav-wrapper .right-side.responsive .nav-link-wrapper a {
+    display: block;
+    color: white;
+  }
+  .nav-wrapper .right-side.responsive .nav-link-wrapper a:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    background-color: transparent;
+  }
+  .footer-wrapper p {
+    font-size: 0.9em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1286,16 +1427,23 @@ body {
   .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
     font-size: 0.7em;
   }
-  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member img {
+  .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member img, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member img, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member img {
     height: 180px;
     width: 180px;
   }
-  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid .staff-member i {
+  .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member p {
     font-size: 0.7em;
+  }
+  .footer-wrapper p {
+    font-size: 0.8em;
   }
 }
 
 @media only screen and (max-width: 520px) {
+  .nav-wrapper {
+    width: 80px;
+    height: 45px;
+  }
   .nav-wrapper .left-side a {
     margin-top: 15px;
     margin-left: 10px;
@@ -1304,6 +1452,9 @@ body {
   }
   .nav-wrapper .left-side img {
     display: none;
+  }
+  .nav-wrapper .right-side .nav-link-wrapper svg {
+    margin-top: 15px;
   }
   .bg-wrapper .bg-content .right-side p {
     padding: 0px 20px;
@@ -1361,7 +1512,7 @@ body {
   .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
     font-size: 0.7em;
   }
-  .about-wrapper .staff-grid-wrapper .staff-grid {
+  .about-wrapper .staff-grid-wrapper .staff-grid-2, .about-wrapper .staff-grid-wrapper .staff-grid-3, .about-wrapper .staff-grid-wrapper .staff-grid-2s {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1370,11 +1521,11 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member img {
+  .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member img, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member img, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member img {
     height: 220px;
     width: 220px;
   }
-  .about-wrapper .staff-grid-wrapper .staff-grid .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid .staff-member i {
+  .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member p {
     font-size: 0.7em;
   }
   .service-wrapper .cards-wrapper .service-content .service-card {

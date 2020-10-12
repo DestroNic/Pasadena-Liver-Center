@@ -2,12 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Header from '../components/header';
 import mena from '../assets/media/mena.jpg';
-import aurelia from '../assets/media/staff/aurelia.jpg';
-import brenda from '../assets/media/staff/brenda.jpg';
+import jeanine from '../assets/media/staff/jeanine.jpg';
+import krystle from '../assets/media/staff/krystle.jpg';
 import iman from '../assets/media/staff/iman.jpg';
 import norma from '../assets/media/staff/norma.jpg';
 import ruby from '../assets/media/staff/ruby.jpg';
-import tam from '../assets/media/staff/tam.jpg';
+import jennifer from '../assets/media/staff/jennifer.jpg';
 import yvette from '../assets/media/staff/yvette.jpg';
 
 const About = (props) => {
@@ -76,11 +76,27 @@ const About = (props) => {
             </div>
             <Header header={title2} />
             <div className="staff-grid-wrapper">
-                <div className="staff-grid">
+                <div className="staff-grid-2">
+                <div className="staff-member">
+                        <img src={jennifer} alt="Jennifer Mohani Kahau-Segovia" />
+                        <strong>Jennifer Mohani Kahau-Segovia</strong>
+                        <i>NP-C</i>
+                        <p>enim diam vulputate ut pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed</p>
+                    </div>
                     <div className="staff-member">
-                        <img src={norma} alt="Norma Carmona" />
-                        <strong>Norma Carmona</strong>
-                        <i>Medical Assistant</i>
+                        <img src={iman} alt="Iman Jooma" />
+                        <strong>Iman Jooma</strong>
+                        <i>Physician Assistant</i>
+                        <p>enim diam vulputate ut pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed</p>
+                    </div>
+                    
+                    
+                    </div>
+                <div className="staff-grid-3">
+                    <div className="staff-member">
+                        <img src={yvette} alt="Yvette Santoscoy" />
+                        <strong>Yvette Santoscoy</strong>
+                        <i>Office Manager</i>
                     </div>
                     <div className="staff-member">
                         <img src={ruby} alt="Ruby Gonzales" />
@@ -88,31 +104,24 @@ const About = (props) => {
                         <i>Medical Assistant</i>
                     </div>
                     <div className="staff-member">
-                        <img src={yvette} alt="Yvette Santoscoy" />
-                        <strong>Yvette Santoscoy</strong>
-                        <i>Office Manager</i>
+                        <img src={jeanine} alt="Jeanine Cordova-Castillo" />
+                        <strong>Jeanine Cordova-Castillo</strong>
+                        <i>MA Nurse Navigator</i>
+                    </div>
+                    </div>
+                <div className="staff-grid-2s">
+                    <div className="staff-member">
+                        <img src={krystle} alt="Krystle Bonilla" />
+                        <strong>Krystle Bonilla</strong>
+                        <i>MA</i>
                     </div>
                     <div className="staff-member">
-                        <img src={iman} alt="Iman Jooma" />
-                        <strong>Iman Jooma</strong>
-                        <i>Physician Assistant</i>
-                    </div>
-                    <div className="staff-member">
-                        <img src={aurelia} alt="Aurelia Sanchez" />
-                        <strong>Aurelia Sanchez</strong>
+                        <img src={norma} alt="Norma Carmona" width='400px' height='400px'/>
+                        <strong>Norma Carmona</strong>
                         <i>Medical Assistant</i>
                     </div>
-                    <div className="staff-member">
-                        <img src={brenda} alt="Brenda Serbantez" />
-                        <strong>Brenda Serbantez</strong>
-                        <i>Receptionist</i>
-                    </div>
                     <div></div>
-                    <div className="staff-member">
-                        <img src={tam} alt="Tam Nguyen" />
-                        <strong>Tam Nguyen</strong>
-                        <i>Receptionist</i>
-                    </div>
+                    
                     <div></div>
                 </div>
             </div>

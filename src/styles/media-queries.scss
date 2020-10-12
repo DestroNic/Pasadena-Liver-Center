@@ -109,6 +109,13 @@
          }
 
      }
+
+     .footer-wrapper {
+        p {
+            font-size: 1.4em;
+            
+        }
+    }
      
     }
     
@@ -187,6 +194,12 @@
                }
            }
         }
+        }
+        .footer-wrapper {
+            p {
+                font-size: 1.3em;
+                
+            }
         }
 
  }
@@ -300,10 +313,14 @@
             }
         }
         .staff-grid-wrapper {
-            .staff-grid {
+            .staff-grid-2, .staff-grid-3, .staff-grid-2s {
                 grid-template-columns: 1fr 1fr;
                 .staff-member {
-                    strong, i {
+                    img {
+                        height: 250px;
+                        width: 250px;
+                    }
+                    strong, i, p {
                         font-size: 0.8em;
                     }
                 }
@@ -430,12 +447,25 @@
         }
     }
     }
+    .footer-wrapper {
+        p {
+            font-size: 1.2em;
+            
+        }
+    }
 }
 
 @media only screen and (min-width: 940px) {
     .nav-wrapper {
         #nav-menu[style]{
             width: 50% !important;
+        }
+    }
+
+    .footer-wrapper {
+        p {
+            font-size: 1em;
+            
         }
     }
 }
@@ -458,13 +488,16 @@
         }
     
     .staff-grid-wrapper {
-        .staff-grid {
+        .staff-grid-2, .staff-grid-3, .staff-grid-2s {
             .staff-member {
                 img {
                     height: 220px;
                     width: 220px;
                 }
-                strong, i {
+                p {
+                    width: 65%;
+                }
+                strong, i, p {
                     font-size: 0.7em;
                 }
             }
@@ -550,6 +583,12 @@
             
         }
     }
+    }
+    .footer-wrapper {
+        p {
+            font-size: 0.9em;
+            
+        }
     }
 }
 
@@ -639,13 +678,13 @@
         }
     
     .staff-grid-wrapper {
-        .staff-grid {
+        .staff-grid-2, .staff-grid-3, .staff-grid-2s {
             .staff-member {
                 img {
                     height: 180px;
                     width: 180px;
                 }
-                strong, i {
+                strong, i, p {
                     font-size: 0.7em;
                 }
             }
@@ -667,10 +706,18 @@
         }
     }
     }
+    .footer-wrapper {
+        p {
+            font-size: 0.8em;
+            
+        }
+    }
 }
 
 @media only screen and (max-width: 520px) {
     .nav-wrapper {
+        width: 80px;
+        height: 45px;
         .left-side{
             a {
                 margin-top: 15px;
@@ -680,6 +727,7 @@
             }
             img {
                 display: none;
+                
             }
 
 
@@ -692,6 +740,8 @@
         
     }
    
+ 
+
     .bg-wrapper {
         .bg-content {
             .right-side {
@@ -768,7 +818,7 @@
         }
     
     .staff-grid-wrapper {
-        .staff-grid {
+        .staff-grid-2, .staff-grid-3, .staff-grid-2s {
             display: flex;
             flex-direction: column;
             .staff-member {
@@ -776,7 +826,7 @@
                     height: 220px;
                     width: 220px;
                 }
-                strong, i {
+                strong, i, p {
                     font-size: 0.7em;
                 }
             }

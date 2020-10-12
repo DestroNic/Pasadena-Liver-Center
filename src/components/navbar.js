@@ -16,6 +16,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
         this.closeNav = this.closeNav.bind(this);
     }
 
+    componentDidMount() {
+        this.closeNav();
+    }
+
     openNav(){
         
         document.getElementById('bars').style.display = "none";

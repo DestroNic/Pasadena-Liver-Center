@@ -104,4 +104,22 @@ $raleway: 'Raleway', sans-serif;
    }
 }
 
+
+
+}
+
+@mixin clri-link-styles {
+    margin: 50px 0;
+     p {
+        font-size: 1.2em;
+        margin: 25px auto;
+        font-family: $cinzel;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 25px 15px;
+        color: white;
+        background-color: $primary-blue;
+    }
 }

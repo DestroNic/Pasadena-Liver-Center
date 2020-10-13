@@ -6,3 +6,7 @@ body {
     text-align: center;
     font-family: $raleway;
   }
+
+  .clri-link-wrapper {
+    @include clri-link-styles();
+}

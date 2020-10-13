@@ -3,6 +3,7 @@ import logo from '../assets/media/logo.png';
 import MoreInfoButton from '../components/moreinfo';
 import HomeBody from '../components/home-body';
 import { motion } from 'framer-motion';
+import ClriLink from '../components/clriLink';
 
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
         </div>
         </div>
         <HomeBody />
+        <ClriLink />
         </motion.div>
 
     )

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/header';
+import ClriLink from '../components/clriLink';
 import { motion } from "framer-motion";
 import service1 from "../assets/media/services/service_1.png";
 import service2 from "../assets/media/services/service_2.jpg";
@@ -135,6 +136,7 @@ Treatment at this time involves diet and exercise; there are no good pharmacolog
                 </div>
                 </div>
             </div>
+            <ClriLink />
         </motion.div>
 
     )

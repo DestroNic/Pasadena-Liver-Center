@@ -56,4 +56,8 @@
         }
     }
 }
+    .clri-link-wrapper {
+        @include clri-link-styles();
+    }
+
 }

@@ -81,8 +81,12 @@ const About = (props) => {
                         <img src={jennifer} alt="Jennifer Mohani Kahau-Segovia" />
                         <strong>Jennifer Mohani Kahau-Segovia</strong>
                         <i>NP-C</i>
+<<<<<<< HEAD
                         <p>
                         Moani Kahau-Segovia, is a practicing Nurse Practitioner in the field of hepatology under the
+=======
+                        <p>Moani Kahau-Segovia, is a practicing Nurse Practitioner in the field of hepatology under the
+>>>>>>> d4a3892a77f88a426318884324ec7bc417949825
 supervision of Edward A. Mena, MD, FAASLD at the Pasadena Liver Center. She also does
 hospital rounds at Huntington Memorial Hospital. Moani is also a Sub-Investigator for the
 California Liver Research Institute. Areas of focus include Hepatitis B, Hepatitis C, Fatty Liver
@@ -91,15 +95,23 @@ Political Science; both of which were obtained at California State University, L
 also holds a Bachelor of Science degree in Nursing and Master of Science in Nursing as a Family
 Nurse Practitioner; both of which were obtained at Azusa Pacific University. Prior to becoming
 an FNP, Moani practiced as a Registered Nurse at Huntington Memorial Hospital in Pasadena.
+<<<<<<< HEAD
 During this journey, she married and raised 3 beautiful daughters.
                         </p>
+=======
+During this journey, she married and raised 3 beautiful daughters.</p>
+>>>>>>> d4a3892a77f88a426318884324ec7bc417949825
                     </div>
                     <div className="staff-member">
                         <img src={iman} alt="Iman Jooma" />
                         <strong>Iman Jooma</strong>
                         <i>Physician Assistant</i>
+<<<<<<< HEAD
                         <p>
                         Iman Jomaa is a nationally board-certified Physician Assistant specializing in hepatology working with Dr
+=======
+                        <p>Iman Jomaa is a nationally board-certified Physician Assistant specializing in hepatology working with Dr
+>>>>>>> d4a3892a77f88a426318884324ec7bc417949825
 Edward A Mena at the Pasadena Liver Center.
 Iman is also a Sub-Investigator at the California Liver Research Institute which is a non-profit research
 organization that is focused on the advancement of treatment and curing of all forms of liver disease
@@ -109,8 +121,12 @@ Drew University of Medicine and Science in 2012. She worked in Family/Internal M
 before joining the Pasadena Liver Center in 2015. She is fluent in English, Arabic, French and speak
 Medical Spanish.
 Her primary philosophy is to treat patients as she would her own Family Members.
+<<<<<<< HEAD
 When not practicing medicine, Iman enjoys spending time with her 2 baby boys and husband!
                         </p>
+=======
+When not practicing medicine, Iman enjoys spending time with her 2 baby boys and husband!</p>
+>>>>>>> d4a3892a77f88a426318884324ec7bc417949825
                     </div>
                     
                     

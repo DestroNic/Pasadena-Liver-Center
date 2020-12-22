@@ -81,13 +81,32 @@ const About = (props) => {
                         <img src={jennifer} alt="Jennifer Mohani Kahau-Segovia" />
                         <strong>Jennifer Mohani Kahau-Segovia</strong>
                         <i>NP-C</i>
-                        <p>enim diam vulputate ut pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed</p>
+                        <p>Moani Kahau-Segovia, is a practicing Nurse Practitioner in the field of hepatology under the
+supervision of Edward A. Mena, MD, FAASLD at the Pasadena Liver Center. She also does
+hospital rounds at Huntington Memorial Hospital. Moani is also a Sub-Investigator for the
+California Liver Research Institute. Areas of focus include Hepatitis B, Hepatitis C, Fatty Liver
+Disease, and Liver Cancer. Moani holds Bachelor of Arts degrees in Child Development and
+Political Science; both of which were obtained at California State University, Los Angeles. She
+also holds a Bachelor of Science degree in Nursing and Master of Science in Nursing as a Family
+Nurse Practitioner; both of which were obtained at Azusa Pacific University. Prior to becoming
+an FNP, Moani practiced as a Registered Nurse at Huntington Memorial Hospital in Pasadena.
+During this journey, she married and raised 3 beautiful daughters.</p>
                     </div>
                     <div className="staff-member">
                         <img src={iman} alt="Iman Jooma" />
                         <strong>Iman Jooma</strong>
                         <i>Physician Assistant</i>
-                        <p>enim diam vulputate ut pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed</p>
+                        <p>Iman Jomaa is a nationally board-certified Physician Assistant specializing in hepatology working with Dr
+Edward A Mena at the Pasadena Liver Center.
+Iman is also a Sub-Investigator at the California Liver Research Institute which is a non-profit research
+organization that is focused on the advancement of treatment and curing of all forms of liver disease
+including Hepatitis B, Hepatitis C, Fatty liver disease and Liver Cancer.
+Iman holds a Bachelor of Science degree and completed her physician assistant training at the Charles
+Drew University of Medicine and Science in 2012. She worked in Family/Internal Medicine for 3 years
+before joining the Pasadena Liver Center in 2015. She is fluent in English, Arabic, French and speak
+Medical Spanish.
+Her primary philosophy is to treat patients as she would her own Family Members.
+When not practicing medicine, Iman enjoys spending time with her 2 baby boys and husband!</p>
                     </div>
                     
                     

@@ -112,7 +112,7 @@ class VisitForm extends Component {
                     <label for="marital_status">Marital Status</label>
                     <select
                     name="marital_status"
-                    value="this.state.marital_status"
+                    value={this.state.marital_status}
                     onChange={this.handleChange}
                     >
                         <option>Select an option</option>

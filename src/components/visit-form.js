@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import emailjs from 'emailjs-com';
 
 class VisitForm extends Component {
     constructor(props){
@@ -50,7 +51,20 @@ class VisitForm extends Component {
         }
 
         this.handleChange = this.handleChange.bind(this)
+        this.sendEmail = this.sendEmail.bind(this)
     }
+
+    sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_zzvrls4', 'template_o4qfzg4', e.target, 'user_A8cGF2sTzAbApRqJht3qB')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+      }
 
     handleChange(event) {
         this.setState({
@@ -60,13 +74,13 @@ class VisitForm extends Component {
 
     render(){
     return(
-        <form className="form-wrapper">
+        <form className="form-wrapper" onSubmit={this.sendEmail}>
             <div className="form-header">
                 <p>Patient's Information</p>
             </div>
             <div className="patient-info-wrapper">
                 <div className="form-item">
-                    <label for="first_name">First Name</label>
+                    <label htmlFor="first_name">First Name</label>
                     <input 
                     type="text" 
                     name="first_name" 
@@ -76,7 +90,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                    <label for="last_name">Last Name</label>
+                    <label htmlFor="last_name">Last Name</label>
                     <input 
                     type="text" 
                     name="last_name" 
@@ -86,7 +100,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                    <label for="date_of_birth">Date of Birth</label>
+                    <label htmlFor="date_of_birth">Date of Birth</label>
                     <input 
                     type="date" 
                     name="date_of_birth" 
@@ -95,7 +109,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                    <label for="sex">Gender</label>
+                    <label htmlFor="sex">Gender</label>
                     <select 
                     name="sex"
                     value={this.state.sex}
@@ -109,7 +123,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                    <label for="marital_status">Marital Status</label>
+                    <label htmlFor="marital_status">Marital Status</label>
                     <select
                     name="marital_status"
                     value={this.state.marital_status}
@@ -123,7 +137,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                    <label for="address_line_1">Street Address</label>
+                    <label htmlFor="address_line_1">Street Address</label>
                     <input 
                         type="text" 
                         name="address_line_1" 
@@ -133,7 +147,7 @@ class VisitForm extends Component {
                     />
                 </div>
                 <div className="form-item">
-                    <label for="address_line_2">Apt/Unit/Room</label>
+                    <label htmlFor="address_line_2">Apt/Unit/Room</label>
                     <input
                         type="text"
                         name="address_line_2"
@@ -144,7 +158,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                    <label for="city">City</label>
+                    <label htmlFor="city">City</label>
                     <input
                         type="text"
                         name="city"
@@ -155,7 +169,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                    <label for="us_state">State</label>
+                    <label htmlFor="us_state">State</label>
                     <input
                         type="text"
                         name="us_state"
@@ -166,7 +180,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                    <label for="home_phone">Home Phone</label>
+                    <label htmlFor="home_phone">Home Phone</label>
                     <input
                         type="text"
                         name="home_phone"
@@ -177,7 +191,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                    <label for="cell_phone">Cell Phone</label>
+                    <label htmlFor="cell_phone">Cell Phone</label>
                     <input
                         type="text"
                         name="cell_phone"
@@ -188,7 +202,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                         type="text"
                         name="email"
@@ -204,7 +218,7 @@ class VisitForm extends Component {
             </div>
             <div className="emergency-contact-wrapper">
             <div className="form-item">
-                <label for="ec_name">Emergency Contact Name</label>
+                <label htmlFor="ec_name">Emergency Contact Name</label>
                 <input
                     type="text"
                     name="ec_name"
@@ -215,7 +229,7 @@ class VisitForm extends Component {
                 </div>
 
             <div className="form-item">
-                <label for="ec_phone">Phone Number</label>
+                <label htmlFor="ec_phone">Phone Number</label>
                 <input
                     type="text"
                     name="ec_phone"
@@ -225,7 +239,7 @@ class VisitForm extends Component {
                 />
             </div>
             <div className="form-item">
-                <label for="ec_relationship">Relationship</label>
+                <label htmlFor="ec_relationship">Relationship</label>
                 <input
                     type="text"
                     name="ec_relationship"
@@ -241,7 +255,7 @@ class VisitForm extends Component {
             </div>
             <div className="doctor-info-wrapper">
                 <div className="form-item">
-                <label for="pcd_name">Primary Care Doctor Name</label>
+                <label htmlFor="pcd_name">Primary Care Doctor Name</label>
                 <input
                     type="text"
                     name="pcd_name"
@@ -252,7 +266,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="pcd_phone">Phone</label>
+                <label htmlFor="pcd_phone">Phone</label>
                 <input
                     type="phone"
                     name="pcd_phone"
@@ -263,7 +277,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="rd_name">Referring Doctor Name</label>
+                <label htmlFor="rd_name">Referring Doctor Name</label>
                 <input
                     type="text"
                     name="rd_name"
@@ -274,7 +288,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="rd_phone">Phone</label>
+                <label htmlFor="rd_phone">Phone</label>
                 <input
                     type="text"
                     name="rd_phone"
@@ -290,7 +304,7 @@ class VisitForm extends Component {
             </div>
             <div className="pharmacy-info-wrapper">
                 <div className="form-item">
-                <label for="pharmacy_name">Current Local Pharmacy Name</label>
+                <label htmlFor="pharmacy_name">Current Local Pharmacy Name</label>
                 <input
                     type="text"
                     name="pharmacy_name"
@@ -301,7 +315,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="Pharmacy_address">Address</label>
+                <label htmlFor="Pharmacy_address">Address</label>
                 <input
                     type="text"
                     name="pharmacy_address"
@@ -312,7 +326,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="pharmacy_city">City</label>
+                <label htmlFor="pharmacy_city">City</label>
                 <input
                     type="text"
                     name="pharmacy_city"
@@ -323,7 +337,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="pharmacy_phone">Phone</label>
+                <label htmlFor="pharmacy_phone">Phone</label>
                 <input
                     type="text"
                     name="pharmacy_phone"
@@ -339,7 +353,7 @@ class VisitForm extends Component {
             </div>
             <div className="first-insurance-info-wrapper">
                 <div className="form-item">
-                <label for="fii_plan_name">Plan Name</label>
+                <label htmlFor="fii_plan_name">Plan Name</label>
                 <input
                     type="text"
                     name="fii_plan_name"
@@ -350,7 +364,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="fii_id_number">ID Number</label>
+                <label htmlFor="fii_id_number">ID Number</label>
                 <input
                     type="text"
                     name="fii_id_number"
@@ -361,7 +375,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="fii_group_number">Group Number</label>
+                <label htmlFor="fii_group_number">Group Number</label>
                 <input
                     type="text"
                     name="fii_group_number"
@@ -372,7 +386,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="fii_address">Address</label>
+                <label htmlFor="fii_address">Address</label>
                 <input
                     type="text"
                     name="fii_address"
@@ -383,7 +397,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="fii_ph_name">Policy Holder Name</label>
+                <label htmlFor="fii_ph_name">Policy Holder Name</label>
                 <input
                     type="text"
                     name="fii_ph_name"
@@ -394,7 +408,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="fii_ph_ssn">Social Security Number</label>
+                <label htmlFor="fii_ph_ssn">Social Security Number</label>
                 <input
                     type="text"
                     name="fii_ph_ssn"
@@ -405,7 +419,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="fii_ph_dob">Date of Birth</label>
+                <label htmlFor="fii_ph_dob">Date of Birth</label>
                 <input
                     type="text"
                     name="fii_ph_dob"
@@ -416,7 +430,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="fii_ph_sex">Gender</label>
+                <label htmlFor="fii_ph_sex">Gender</label>
                 <select 
                     name="fii_ph_sex"
                     value={this.state.fii_ph_sex}
@@ -430,7 +444,7 @@ class VisitForm extends Component {
                 </div>
                 
                 <div className="form-item">
-                <label for="fii_ph_relationship">Relationship</label>
+                <label htmlFor="fii_ph_relationship">Relationship</label>
                 <input 
                     type="text"
                     name="fii_ph_relationship"
@@ -446,7 +460,7 @@ class VisitForm extends Component {
             </div>
             <div className="second-insurance-info-wrapper">
                 <div className="form-item">
-                <label for="sii_plan_name">Plan Name</label>
+                <label htmlFor="sii_plan_name">Plan Name</label>
                 <input
                     type="text"
                     name="sii_plan_name"
@@ -457,7 +471,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="sii_id_number">ID Number</label>
+                <label htmlFor="sii_id_number">ID Number</label>
                 <input
                     type="text"
                     name="sii_id_number"
@@ -468,7 +482,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="sii_group_number">Group Number</label>
+                <label htmlFor="sii_group_number">Group Number</label>
                 <input
                     type="text"
                     name="sii_group_number"
@@ -479,7 +493,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="sii_address">Address</label>
+                <label htmlFor="sii_address">Address</label>
                 <input
                     type="text"
                     name="sii_address"
@@ -490,7 +504,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="sii_ph_name">Policy Holder Name</label>
+                <label htmlFor="sii_ph_name">Policy Holder Name</label>
                 <input
                     type="text"
                     name="sii_ph_name"
@@ -501,7 +515,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="sii_ph_ssn">Social Security Number</label>
+                <label htmlFor="sii_ph_ssn">Social Security Number</label>
                 <input
                     type="text"
                     name="sii_ph_ssn"
@@ -512,7 +526,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="sii_ph_dob">Date of Birth</label>
+                <label htmlFor="sii_ph_dob">Date of Birth</label>
                 <input
                     type="text"
                     name="sii_ph_dob"
@@ -523,7 +537,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="sii_ph_sex">Gender</label>
+                <label htmlFor="sii_ph_sex">Gender</label>
                 <select 
                     name="sii_ph_sex"
                     value={this.state.sii_ph_sex}
@@ -537,7 +551,7 @@ class VisitForm extends Component {
                 </div>
 
                 <div className="form-item">
-                <label for="sii_ph_relationship">Relationship</label>
+                <label htmlFor="sii_ph_relationship">Relationship</label>
                 <input 
                     type="text"
                     name="sii_ph_relationship"

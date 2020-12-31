@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Header from '../components/header';
 import mena from '../assets/media/mena.jpg';
-import jeanine from '../assets/media/staff/jeanine.jpg';
+import natalie from '../assets/media/staff/natalie.jpg';
 import krystle from '../assets/media/staff/krystle.jpg';
 import iman from '../assets/media/staff/iman.jpg';
 import norma from '../assets/media/staff/norma.jpg';
@@ -11,8 +11,9 @@ import jennifer from '../assets/media/staff/jennifer.jpg';
 import yvette from '../assets/media/staff/yvette.jpg';
 
 const About = (props) => {
-    let title1 = "About us";
-    let title2 = "our Staff";
+    let title1= "Our Mission"
+    let title2 = "About us";
+    let title3 = "our Staff";
 
     return(
         <motion.div className="about-wrapper"
@@ -21,6 +22,35 @@ const About = (props) => {
         exit={{ opacity: 0}}
         >
             <Header header={title1} />
+            <div className='mission-content-wrapper'>
+                <p className='mission-statement'>
+                    Our mission is to improve the liver health of the community we serve with a commitment to excellence in all that we do.<br /><br />
+
+                    Our goal is to provide patient-centered health care with superiority in quality clinical practice, education, and research.<br /><br />
+
+                    Our goal is to exceed patient expectations by providing compassionate, attentive, and accessible patient-centered care.<br /><br />
+                </p>
+                <ul className='mission-bullets'>
+                    <li> We are dedicated to providing quality patient care. Our patients <i>always</i> come first.</li>
+                    <li> We provide patient-centered service by caring for the whole person. We consider their history, relationships, culture, and needs.</li>
+                    <li> We treat each of our patients with respect and attentiveness.</li>
+                    <li> We are compassionate listeners.</li>
+                    <li> We use a team approach in providing health care and involve the patient as part of our team decision making process. We organize and coordinate health care services to meet the needs of our patients, especially those with complex medical care.</li>
+                    <li> We are here to fight for your medical care.</li>
+                    <li> Our team includes a Nurse Practitioner (NP) and Physician’s Assistant (PA). These extended providers play an important role in the continuity of care that we provide to our patients. They complement and support the work of Dr. Edward A. Mena.</li>
+                </ul>
+                <h3>
+                    NURSE PRACTITIONER & PHYSICIAN ASSISTANT ROLE
+                </h3>
+                <ul className='mission-bullets'>
+                    <li> Manage a variety of complex conditions associated with the assessment, treatment, and management of Hepatology patients</li>
+                    <li> Provide clinical expertise in the planning and delivery of patient care</li>
+                    <li> Promote innovative and creative clinical nursing practice and ensure it is validated with best practice guidelines and evidence-based research</li>
+                    <li> Work collaboratively with all members of the health care team to ensure staff receives high quality support</li>
+                    <li> Sub-Investigator for CLRI clinical trials</li>
+                </ul>
+            </div>
+            <Header header={title2} />
             <div className="about-content-wrapper">
                 <div className="left-side">
                     <img src={mena} alt="Dr. Edward Mena" />
@@ -74,7 +104,7 @@ const About = (props) => {
 
                 </div>
             </div>
-            <Header header={title2} />
+            <Header header={title3} />
             <div className="staff-grid-wrapper">
                 <div className="staff-grid-2">
                 <div className="staff-member">
@@ -123,8 +153,8 @@ const About = (props) => {
                         <i>Medical Assistant</i>
                     </div>
                     <div className="staff-member">
-                        <img src={jeanine} alt="Jeanine Cordova-Castillo" />
-                        <strong>Jeanine Cordova-Castillo</strong>
+                        <img src={natalie} alt="Natalie Lara" />
+                        <strong>Natalie Lara</strong>
                         <i>MA Nurse Navigator</i>
                     </div>
                     </div>

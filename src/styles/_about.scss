@@ -1,4 +1,16 @@
 .about-wrapper {
+    .mission-content-wrapper{
+        width: 50%;
+        margin: 0px auto;
+        line-height: 1.5;
+        background-color: $secondary-blue;
+        @include shadow();
+        padding: 29px 50px;
+        .mission-bullets{
+            text-align: start;
+            margin: 0 30px;
+        }
+    }
     .about-content-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;

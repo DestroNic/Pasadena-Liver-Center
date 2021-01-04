@@ -6,5 +6,5 @@ deploy:
   image: python:latest
   script:
   - pip install awscli
-  - aws s3 cp . s3://clri.sites.mphtechinc.com/ --recursive
+  - aws s3 cp . s3://plc.sites.mphtechinc.com/ --recursive
   - aws cloudfront create-invalidation --distribution-id $DISTRO_ID --paths "/*"

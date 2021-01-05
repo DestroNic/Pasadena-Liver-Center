@@ -1,0 +1,41 @@
+variables:
+  AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+
+stages:
+    - install
+    - build 
+    - deploy
+
+install:
+   image: node:latest
+   stage: install
+   script:
+      - npm install
+   artifacts:
+      name: "artifacts"
+      untracked: true
+      expire_in: 30 mins
+      paths:
+        - .npm/
+        - node_modules/
+
+build:
+   image: node:latest
+   stage: build
+   script:
+      - CI=false npm run build
+   artifacts:
+      paths:
+         - public
+      expire_in: 30 mins
+   dependencies:
+      - install
+  
+deploy:
+  image: python:latest
+  stage: deploy
+  script:
+  - pip install awscli
+  - aws s3 cp public/ s3://plc.sites.mphtechinc.com/ --recursive
+  - aws cloudfront create-invalidation --distribution-id $DISTRO_ID --paths "/*"

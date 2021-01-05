@@ -43,6 +43,9 @@
          }
      }
      .about-wrapper {
+         .mission-content-wrapper{
+             width: 70%;
+         }
          .about-content-wrapper{
              width: 90%;
          }
@@ -114,6 +117,13 @@
         p {
             font-size: 1.4em;
             
+        }
+    }
+    .contact-info{
+        .right-side{
+            iframe{
+                height: 450px;
+            }
         }
     }
      
@@ -201,7 +211,13 @@
                 
             }
         }
-
+        .contact-info{
+            .right-side{
+                iframe {
+                    width: 80%;
+                }
+            }
+        }
  }
 
  @media only screen and (max-width: 940px) {
@@ -301,11 +317,15 @@
         }
     }
     .about-wrapper {
+        .mission-content-wrapper{
+            width: 85%;
+            font-size: 0.9em;
+        }
         .about-content-wrapper{
             width: 98%;
             .left-side {
                 .mena-bio h4, i, p {
-                    font-size: 0.8em;
+                    font-size: 0.9em;
                 }
             }
             .right-side strong, p {
@@ -388,6 +408,7 @@
                     }
                 }
             }
+
         }
   }
   .contact-footer {
@@ -503,6 +524,13 @@
             }
         }
     }
+    .contact-info{
+        .right-side{
+            iframe{
+                height: 250px;
+            }
+        }
+    }
 }    
 .about-visit-info {
     font-size: 0.8em;
@@ -544,7 +572,7 @@
         flex-direction: column;
 
         .right-side {
-            height: 305px;
+            height: 400px;
             div {
                 div {
                     width: 100% !important;
@@ -662,6 +690,7 @@
     }
     .about-wrapper {
         .about-content-wrapper{
+            
             display: flex;
             flex-direction: column;
             .left-side {
@@ -669,11 +698,11 @@
                     height: 300px;
                 }
                 .mena-bio h4, i, p {
-                    font-size: 0.7em;
+                    font-size: 0.8em;
                 }
             }
             .right-side strong, p {
-                font-size: 0.7em; 
+                font-size: 0.8em; 
             }
         }
     
@@ -802,6 +831,10 @@
     }
 
     .about-wrapper {
+        .mission-content-wrapper{
+            font-size: 0.8em;
+            padding: 29px 33px;
+        }
         .about-content-wrapper{
             width: 98%;
             .left-side {

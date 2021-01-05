@@ -100,7 +100,7 @@ const About = (props) => {
 
 
                     <strong>Languages Spoken in the office</strong>
-                    <p>English, Spanish, Vietnamese, French, and Arabic</p>
+                    <p>English, Spanish, French, and Arabic</p>
 
                 </div>
             </div>

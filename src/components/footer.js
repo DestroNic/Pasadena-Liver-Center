@@ -8,7 +8,7 @@ export default class Footer extends React.Component {
         return (
             <div className='footer-wrapper'>
                 
-                <p>Pasadena Liver Center <Moment format="YYYY" withTitle></Moment></p>   
+                <p>Pasadena Liver Center <Moment format="YYYY" withTitle></Moment> &#169;</p>   
             </div>
         );
     }

@@ -8,6 +8,7 @@ stages:
     - deploy
 
 install:
+   image: nodejs:latest
    stage: install
    script:
       - npm install
@@ -20,6 +21,7 @@ install:
         - node_modules/
 
 build:
+   image: nodejs:latest
    stage: build
    script:
       - CI=false npm run build

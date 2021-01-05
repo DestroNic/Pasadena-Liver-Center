@@ -26,5 +26,5 @@ export class MapContainer extends React.Component {
 }
  
 export default ConnectApiMaps({
-  apiKey: ("AIzaSyDnSHkbhkfWf48C_veRmGoWe1Pw8nnkuhU")
+  apiKey: ("")
 })(MapContainer)

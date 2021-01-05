@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Header from '../components/header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faClock, faPhoneAlt, faFax } from '@fortawesome/free-solid-svg-icons';
-import MapContainer from '../components/map';
+
 
 const title = "Contact Us";
 
@@ -55,7 +55,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="right-side">
-                        {/* <MapContainer /> */}
+                        
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13208.937486858313!2d-118.1509844!3d34.1403455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4a40e8fce601bdc!2sEdward%20A.%20Mena%2C%20M.D.%20Pasadena%20Liver%20Center!5e0!3m2!1sen!2sus!4v1609823400980!5m2!1sen!2sus" width="600" height="450" frameBorder="0"  allowFullScreen="" aria-hidden="false" tabIndex="0" />
                     </div>
                 </div>

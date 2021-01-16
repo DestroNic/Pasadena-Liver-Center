@@ -4,6 +4,35 @@
     margin: auto;
 }
 
+.about-visit-body{
+    img {
+        width: 55%;
+    }
+}
+
+.about-visit-links{
+    .three-link{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin: auto;
+    a {
+        margin: 10px 0;
+        text-decoration: none;
+    }
+}
+.two-link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    margin: auto;
+    a {
+        margin: 10px 0;
+        text-decoration: none;
+    }
+}
+}
+
 .form-wrapper {
     width: 80%;
     margin: auto;
@@ -57,4 +86,6 @@
         background-color: $primary-blue;
         margin-top: 50px;
     }
+
+
 }

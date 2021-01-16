@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/header';
-import VisitForm from '../components/visit-form';
+import formFill from '../assets/media/form-fill.jpg';  
+// import VisitForm from '../components/visit-form';
 
 const title = "About Your Visit";
 
@@ -16,8 +17,22 @@ class AboutVisit extends Component {
 
                 Please contact the office with any questions and we look forward to seeing you.<br /><br />
             </p>
+            </div >
+            <div className='about-visit-body'>
+                <img src={formFill} alt='form' />
+
             </div>
-            <VisitForm />
+            <div className='about-visit-links'>
+                <div className='three-link'>
+                <a href='https://mphtechinc-client-public.s3-us-west-2.amazonaws.com/plc/privacy+practices.docx.pdf' target='_blank'>Privacy Practice Disclosure</a>
+                <a href='https://mphtechinc-client-public.s3-us-west-2.amazonaws.com/plc/CHRONIC+LIVER+DISEASE.docx.pdf' target='_blank'>Chronic Liver Disease</a>
+                <a href='https://mphtechinc-client-public.s3-us-west-2.amazonaws.com/plc/medication+list.docx.pdf' target='_blank'>Medication List</a>
+                </div>
+                <div className='two-link'>
+                <a href='https://mphtechinc-client-public.s3-us-west-2.amazonaws.com/plc/Financial+Policy.docx.pdf' target='_blank'>Financial Policy</a>
+                <a href='https://mphtechinc-client-public.s3-us-west-2.amazonaws.com/plc/disability+forms.docx.pdf' target='_blank'>Disability Forms</a>
+                </div>
+            </div>
         </div>
 
     )

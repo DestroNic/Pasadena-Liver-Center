@@ -284,6 +284,21 @@ body {
   padding: 15px 0px;
 }
 
+.about-wrapper .mission-content-wrapper {
+  width: 50%;
+  margin: 0px auto;
+  line-height: 1.5;
+  background-color: #B0DBE5;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 29px 50px;
+}
+
+.about-wrapper .mission-content-wrapper .mission-bullets {
+  text-align: start;
+  margin: 0 30px;
+}
+
 .about-wrapper .about-content-wrapper {
   display: -ms-grid;
   display: grid;
@@ -878,6 +893,9 @@ body {
   .body-wrapper .bottom-card .grid-container .left-side p {
     font-size: 1em;
   }
+  .about-wrapper .mission-content-wrapper {
+    width: 70%;
+  }
   .about-wrapper .about-content-wrapper {
     width: 90%;
   }
@@ -957,6 +975,9 @@ body {
   .footer-wrapper p {
     font-size: 1.4em;
   }
+  .contact-info .right-side iframe {
+    height: 450px;
+  }
 }
 
 @media only screen and (max-width: 1110px) {
@@ -1001,6 +1022,9 @@ body {
   }
   .footer-wrapper p {
     font-size: 1.3em;
+  }
+  .contact-info .right-side iframe {
+    width: 80%;
   }
 }
 
@@ -1090,11 +1114,15 @@ body {
   .body-wrapper .bottom-card .grid-container .left-side p {
     font-size: 0.9em;
   }
+  .about-wrapper .mission-content-wrapper {
+    width: 85%;
+    font-size: 0.9em;
+  }
   .about-wrapper .about-content-wrapper {
     width: 98%;
   }
   .about-wrapper .about-content-wrapper .left-side .mena-bio h4, .about-wrapper .about-content-wrapper .left-side i, .about-wrapper .about-content-wrapper .left-side p {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
     font-size: 0.8em;
@@ -1246,6 +1274,9 @@ body {
   .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member p, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member i, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member p {
     font-size: 0.7em;
   }
+  .about-wrapper .contact-info .right-side iframe {
+    height: 250px;
+  }
   .about-visit-info {
     font-size: 0.8em;
     width: 70%;
@@ -1353,7 +1384,7 @@ body {
             flex-direction: column;
   }
   .contact-wrapper .contact-info .right-side {
-    height: 305px;
+    height: 400px;
   }
   .contact-wrapper .contact-info .right-side div div {
     width: 100% !important;
@@ -1456,10 +1487,10 @@ body {
     height: 300px;
   }
   .about-wrapper .about-content-wrapper .left-side .mena-bio h4, .about-wrapper .about-content-wrapper .left-side i, .about-wrapper .about-content-wrapper .left-side p {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .about-wrapper .about-content-wrapper .right-side strong, .about-wrapper .about-content-wrapper p {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .about-wrapper .staff-grid-wrapper .staff-grid-2 .staff-member img, .about-wrapper .staff-grid-wrapper .staff-grid-3 .staff-member img, .about-wrapper .staff-grid-wrapper .staff-grid-2s .staff-member img {
     height: 180px;
@@ -1533,6 +1564,10 @@ body {
   .body-wrapper .bottom-card .grid-container .left-side p {
     font-size: 0.7em;
     padding: 0px 15px;
+  }
+  .about-wrapper .mission-content-wrapper {
+    font-size: 0.8em;
+    padding: 29px 33px;
   }
   .about-wrapper .about-content-wrapper {
     width: 98%;

@@ -351,6 +351,13 @@
   .about-wrapper .staff-grid-wrapper .staff-grid .staff-member strong, .about-wrapper .staff-grid-wrapper .staff-grid .staff-member i {
     font-size: 0.7em;
   }
+
+  .about-visit-links {
+    .three-link{
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
 
 @media only screen and (max-width: 520px) {

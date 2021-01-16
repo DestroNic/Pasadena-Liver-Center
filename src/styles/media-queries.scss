@@ -741,6 +741,16 @@
             
         }
     }
+    .about-visit-links{
+        .three-link{
+            display: flex;
+            flex-direction: column;
+        }
+        .two-link{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
 @media only screen and (max-width: 520px) {

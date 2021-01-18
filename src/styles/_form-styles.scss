@@ -16,9 +16,13 @@
     grid-template-columns: repeat(3, 1fr);
     width: 70%;
     margin: auto;
+    gap: 10px 25px;
     a {
         margin: 10px 0;
         text-decoration: none;
+        background-color: $primary-blue;
+        padding: 15px 0;
+        color: white;
     }
 }
 .two-link {
@@ -26,9 +30,13 @@
     grid-template-columns: repeat(2, 1fr);
     width: 50%;
     margin: auto;
+    gap: 10px 25px;
     a {
         margin: 10px 0;
         text-decoration: none;
+        background-color: $primary-blue;
+        padding: 15px 0;
+        color: white;
     }
 }
 }

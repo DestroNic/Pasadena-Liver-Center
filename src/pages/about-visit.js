@@ -33,6 +33,9 @@ class AboutVisit extends Component {
                 <a href='https://mphtechinc-client-public.s3-us-west-2.amazonaws.com/plc/disability+forms.docx.pdf' target='_blank'>Disability Forms</a>
                 </div>
             </div>
+            <div className='about-visit-info'>
+                <p>Please print and fill out the following forms. You can either scan them and email them to ruby@pasadena-livercenter.com or bring them with you to your appointment.</p>
+            </div>
         </div>
 
     )

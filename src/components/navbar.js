@@ -24,11 +24,14 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
         
         document.getElementById('bars').style.display = "none";
         document.getElementById('nav-menu').style.width = '50%';
+        
     }
 
     closeNav(){
-        document.getElementById('nav-menu').style.width = '0%';
-        document.getElementById('bars').style.display = "block";
+        
+            document.getElementById('nav-menu').style.width = '0%';
+            document.getElementById('bars').style.display = "block";    
+    
     }
     
 
@@ -44,27 +47,27 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
                         <a href="#" onClick={this.closeNav}>&times;</a>
                     </div>
                     <div className="nav-link-wrapper">
-                        <NavLink exact to="/" activeClassName="nav-link-active" onClick={this.closeNav}>
+                        <NavLink exact to="/" activeClassName="nav-link-active" onClick={this.closeNav} className='menu-item'>
                             Home
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">
-                        <NavLink to="/about" activeClassName="nav-link-active" onClick={this.closeNav}>
+                        <NavLink to="/about" activeClassName="nav-link-active" onClick={this.closeNav} className='menu-item'>
                             About
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">
-                        <NavLink to="/services" activeClassName="nav-link-active" onClick={this.closeNav}>
+                        <NavLink to="/services" activeClassName="nav-link-active" onClick={this.closeNav} className='menu-item'>
                             Services
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">
-                        <NavLink  to="/about-visit" activeClassName="nav-link-active" onClick={this.closeNav}>
+                        <NavLink  to="/about-visit" activeClassName="nav-link-active" onClick={this.closeNav} className='menu-item'>
                             About your visit
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">
-                        <NavLink to="/contact" activeClassName="nav-link-active" onClick={this.closeNav}>
+                        <NavLink to="/contact" activeClassName="nav-link-active" onClick={this.closeNav} className='menu-item'>
                             Contact
                         </NavLink>
                     </div>

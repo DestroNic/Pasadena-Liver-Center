@@ -125,7 +125,7 @@ const About = (props) => {
                     <div className="staff-member">
                         <img src={iman} alt="Iman Jooma" />
                         <strong>Iman Jooma</strong>
-                        <i>Physician Assistant</i>
+                        <i>PA-C</i>
                         <p>Iman Jomaa is a nationally board-certified Physician Assistant specializing in hepatology working with Dr
                             Edward A Mena at the Pasadena Liver Center.
                             Iman is also a Sub-Investigator at the California Liver Research Institute which is a non-profit research
@@ -155,14 +155,14 @@ const About = (props) => {
                     <div className="staff-member">
                         <img src={natalie} alt="Natalie Lara" />
                         <strong>Natalie Lara</strong>
-                        <i>MA Nurse Navigator</i>
+                        <i>Medical Assistant, Nurse Navigator</i>
                     </div>
                     </div>
                 <div className="staff-grid-2s">
                     <div className="staff-member">
                         <img src={krystle} alt="Krystle Bonilla" />
                         <strong>Krystle Bonilla</strong>
-                        <i>MA</i>
+                        <i>Medical Assistant</i>
                     </div>
                     <div className="staff-member">
                         <img src={norma} alt="Norma Carmona" width='400px' height='400px'/>

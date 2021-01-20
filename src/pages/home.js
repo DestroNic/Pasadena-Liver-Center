@@ -20,6 +20,7 @@ const Home = () => {
               <img src={logo} alt="logo"></img>
           </div>
           <div className="right-side">
+            <h3><i>We strive to treat our patients as family</i></h3>
             <p>We treat a wide range of liver diseases including:</p>
             <p>Cirrhosis, Hepatic Encephalopathy, Hepatitis, Hepatitis B, <br />Hepatitis C, Fatty liver decease, Liver cancer and more.</p>
             <MoreInfoButton />

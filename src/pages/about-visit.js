@@ -28,9 +28,10 @@ class AboutVisit extends Component {
                 <a href='https://mphtechinc-client-public.s3-us-west-2.amazonaws.com/plc/CHRONIC+LIVER+DISEASE.docx.pdf' target='_blank'>Chronic Liver Disease</a>
                 <a href='https://mphtechinc-client-public.s3-us-west-2.amazonaws.com/plc/medication+list.docx.pdf' target='_blank'>Medication List</a>
                 </div>
-                <div className='two-link'>
+                <div className='three-link'>
                 <a href='https://mphtechinc-client-public.s3-us-west-2.amazonaws.com/plc/Financial+Policy.docx.pdf' target='_blank'>Financial Policy</a>
                 <a href='https://mphtechinc-client-public.s3-us-west-2.amazonaws.com/plc/disability+forms.docx.pdf' target='_blank'>Disability Forms</a>
+                <a href='../assets/downloads/PatientRegistrationForm.pdf' target='_blank' download>Patient Registration Form</a>
                 </div>
             </div>
             <div className='about-visit-info'>
